@@ -1,0 +1,24 @@
+/* put your css code here */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.bigger-text {
+  font-size: 1.75em;
+  color: gray;
+}
+
+
+h1, h2{
+  color: #008B8B;
+}
+
+.tab {
+  font-size: 1.75em;
+  color: #008B8B;
+}
+
+
