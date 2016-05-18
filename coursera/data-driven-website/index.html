@@ -43,12 +43,15 @@
 <!-- templates-->
 
 <!--animals-template-->
-<div id="animals-tab" class="tab">
-<script id="animals-template" type="text/x-handlebars-template">
-<h1>Animal Categories and Animal Types</h1>
+<div id="animals-tab" class="tab container-fluid">
+  <script id="animals-template" type="text/x-handlebars-template">
+  <h2>Animal Categories and Animal Types</h2>
+  <br>
+    <p class="bigger-text">The following are three different categories of animals that will be described in this website. Below each list are four types of animals representing these categories. You can find more details about these animals by clicking the <em>DESCRIPTIONS</em> tab and see their pictures by clicking the <em>SLIDESHOW</em> tab.</p>
+
      {{#each category}}
     <div class="col-xs-6 col-md-4 bigger-text"> 
-      <h2> {{name}} </h2> 
+      <h3> {{name}} </h3> 
         {{#each animals}}
           <ul>
             <li class="animal-names">{{name}}</li> 
@@ -56,7 +59,6 @@
         {{/each}}
     </div>
   {{/each}} 
-  <a href="http://riceball1.github.io">Back to Main Site</a>  
 </script>
 </div>
 <!-- end of animals template-->
@@ -65,22 +67,60 @@
 <!--description template-->
 <div id="description-tab" class="tab">
  <script id="description-template" type="text/x-handlebars-template">
+ 
+   
   {{#each category}}
     {{#each animals}}
+ 
     <h2>{{name}}</h2>
-    <p>{{description}}</p>
-  {{/each}}
-  {{/each}}
+    <img class="thumbnail img-responsive" src="{{image2}}" alt="" />
+    
+    <!-- modal -->
+  <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#{{id}}">What is a {{name}}?</button>
+
+<!-- Modal -->
+<div id="{{id}}" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{name}}</h4>
+      </div>
+      <img class="img-responsive thumbnail small-image" src="{{image2}}" alt="" />
+      <div class="modal-body">
+        <p>{{description}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end of modal-->
+
+{{/each}}
+{{/each}}
+
+
+ 
 </script>
-<a href="http://riceball1.github.io">Back to Main Site</a>
 </div>
 <!--end of description template-->
+
+
+
+
+
 
 
 <!--slideshow template-->
 <script id="slideshow-template" type="text/x-handlebars-template">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
 
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -94,13 +134,13 @@
        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 
-          {{#each category}}
+            {{#each category}}
             {{#each animals}}
             <div class="item {{#if @first}}active{{/if}}">
-             <img class="carousel-img" src="{{image1}}" alt=""/> 
-            <div class="carousel-caption">
-              {{name}}
-            </div>
+              <img class="carousel-img" src="{{image1}}" alt=""/> 
+                <div class="carousel-caption">
+                    {{name}}
+                </div>
           </div> <!-- / carousel item -->
             {{/each}}
           {{/each}}
@@ -121,7 +161,6 @@
     </div> <!-- / carousel --> 
   </div> <!-- / col -->
 </div> <!-- / row -->
-<a href="http://riceball1.github.io">Back to Main Site</a>
 </script>
 <!--end of description template-->
 

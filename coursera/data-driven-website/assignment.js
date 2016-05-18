@@ -32,6 +32,7 @@ $(document).ready(function(){
   source   = $("#slideshow-template").html();
   slideshow_template = Handlebars.compile(source);
 
+ 
 
     // displays the animals template
   $("#animals-tab").click(function() {
@@ -40,8 +41,8 @@ $(document).ready(function(){
     // make the animals tab the active one
     // first make the currently active tab inactive
     $(".nav-tabs .active").removeClass("active");
-    // then make albums tab active
-    $("#albums-tab").addClass("active");
+    // then make animals tab active
+    $("#animals-tab").addClass("active");
     
   });
 
@@ -49,16 +50,17 @@ $(document).ready(function(){
   
 
   // displays the description template
-  $("#description-tab").click(function() {
+  $("#description-tab").click(function(){
     showTemplate(description_template, animals_data); 
 
     // make the description tab the active one
     // first make the currently active tab inactive
     $(".nav-tabs .active").removeClass("active");
-    // then make albums tab active
-    $("#albums-tab").addClass("active");    
+    // then make description tab active
+    $("#description-tab").addClass("active"); 
+
+});
  
-  });
 
 
 
@@ -71,15 +73,15 @@ $(document).ready(function(){
     // make the slideshow tab the active one
     // first make the currently active tab inactive
     $(".nav-tabs .active").removeClass("active");
-    // then make albums tab active
-    $("#albums-tab").addClass("active");
+    // then make slideshow tab active
+    $("#slideshow-tab").addClass("active");
 
     
   });
 
-  // start the page by showing the albums view
+  // start the page by showing the animals tab view
   // we do this by virtually clicking on the 
-  // albums tab
+  // animals tab
   $("#animals-tab").click();
     
    
