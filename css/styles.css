@@ -41,6 +41,10 @@ a {
   color: black;
 }
 
+.btn-social-icon {
+  font-size: 40px;
+}
+
 span.glyphicon-menu-down {
     font-size: 50px;
     font-weight: bold;
