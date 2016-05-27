@@ -1,150 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <title>Dana Ng</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- custom -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
 
-    <title>Dana Ng - Web Dev</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
+<body>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Works</a></li>
+        <li><a href="http://danafng.blogspot.com/">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="jumbotron">
+  <div class="container">
+    <h1>Dana Ng</h1>
+    <p class="intro-text">Developer, Minimalist, Researcher, Linguaphile</p>
+  </div>
+</div>
+  <br>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Web Dev</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Dana Ng</h1>
-                    <p>finding ways to exemplify and simply the web</p>
-                    <p>Self-taught, determined web developer who likes to live minimally and sustainablly.</p>
-                    <br>
-                    <a class="btn btn-default page-scroll" href="#about">Learn About Dana</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Dana</h1>
-                    
-                     
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="projects" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Projects</h1>
-                    <p>Current Projects<p>
-                    <ul>
-                        <li>Personal Website of Ercan Kaynakca (<a href="http://www.ercankaynakca.com/">Link</a>)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Me</h1>
-                    <p>You can find me on most popular social networks. I like to keep connected, so please feel free to stay connected.</p>
-                    
-                    <ul id="contact-list">
-                        <li><button type="button" class="btn btn-secondary"><a href="http://danafng.blogspot.com/">Blog</a></button></li>
-                        <li><button type="button" class="btn btn-secondary"><a href="https://twitter.com/ravingdango">Twitter</a></button></li>
-                        <li><button type="button" class="btn btn-secondary"><a href="https://www.linkedin.com/in/danafng">LinkedIn</a></button></li>
-                        <li><button type="button" class="btn btn-secondary"><a href="https://github.com/riceball1">Github</a></button></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-     <!-- Footer -->
-     <div class="container text-center">
-             <p>Copyright &copy Dana Ng 2016<p>
-     </div>
+<div class="container-fluid" id="about">    
+  <h3><strong>About</strong></h3><br>
+  <div class="row">
+    <div class="about-format big-text">
+     <p><strong>Dana Ng</strong> is a web developer living in Tucson, Arizona. She is interested in building full stack applications for the web and mobile.</p>
+     <p>A minimalist, foodie and traveler, she has taught herself how to code through online resources and moocs.  Currently, Dana is looking for ways to improve her knowledge with hands-on experience in the tech industry.</p>
+     <br>
      
+    </div>
+  </div>
+</div><br>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<div class="container-fluid big-text" id="projects">    
+  <h3>Projects</h3><br>
+  <p>Current projects I am working on</p>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <div class="project-box">
+        <p>Project 1</p> <button class="btn btn-default"><span class="glyphicon glyphicon-menu-right"></span></button>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6"> 
+      <div class="project-box">
+        <p>Project 2</p> <button class="btn btn-default"><span class="glyphicon glyphicon-menu-right"></span></button>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6"> 
+      <div class="project-box">
+        <p>Project 3</p> <button class="btn btn-default"><span class="glyphicon glyphicon-menu-right"></span></button>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <div class="project-box">
+        <p>Project 4</p> <button class="btn btn-default"><span class="glyphicon glyphicon-menu-right"></span></button>
+        </div>
+    </div>
+    <br>
+   
+  </div>
+</div><br>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<div class="container-fluid text-center" id="contact">    
+    <div class="row">
+    <div class="col-sm-12">
+     <button class="btn btn-default"><a href="https://twitter.com/ravingdango" target="_blank">Twitter</a></button>
+     <button class="btn btn-default"><a href="https://www.linkedin.com/in/danafng" target="_blank">LinkedIn</a></button>
+     <br>
+     
+    </div>
+  </div>
+</div><br>
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+
+<footer class="container-fluid text-center">
+  <p>Copyright &copy 2016 Dana Ng</p>
+</footer>
 
 </body>
-
 </html>
