@@ -62,8 +62,7 @@ span.glyphicon-menu-down:hover, .highlight:hover, .btn-social-icon:hover {
 .jumbotron {
   color: black;
   padding-bottom: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
 }
 
 
