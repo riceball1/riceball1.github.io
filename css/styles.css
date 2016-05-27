@@ -45,17 +45,17 @@ a:hover {
   padding-bottom: 5%;
 }
 
-span.glyphicon-menu-down {
-    font-size: 50px;
+span.glyphicon-menu-down, span.glyphicon-menu-up {
+    font-size: 30px;
     font-weight: bold;
     display: table;
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 10px;
-    color: black;
+    color: gray;
 }
 
-span.glyphicon-menu-down:hover, .highlight:hover, .btn-social-icon:hover {
+span.glyphicon-menu-down:hover, span.glyphicon-menu-up:hover, .highlight:hover, .btn-social-icon:hover {
   color: orange;
   }
 
@@ -81,6 +81,10 @@ h3 {
   text-align: right;
 }
 
+#about, #projects {
+  margin-bottom: 15%;
+  margin-top: 20%;
+}
 
 /* media queries */
 
