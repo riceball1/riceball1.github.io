@@ -62,6 +62,11 @@ span.glyphicon-menu-down:hover, .highlight:hover, .btn-social-icon:hover {
 .jumbotron {
   border-radius: 15px;
   color: black;
+  padding-bottom: 10%;
+}
+
+.glyphicon-menu-down {
+  padding-top: 5%;
 }
 
 h3 {
@@ -73,6 +78,6 @@ h3 {
 
 @media (max-width: 800px) {
   h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
