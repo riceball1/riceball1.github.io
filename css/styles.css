@@ -25,3 +25,58 @@ a:hover {
 .big-text {
   font-size: 1.25em;
 }
+
+.btn-circle {
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1em;
+  border-radius: 15px;
+  border-color: lightgray;
+}
+
+.btn-circle:hover {
+  background-color: white;
+  color: orange;
+  font-weight: bold;
+  border-color: orange;
+  box-shadow: 2px 5px orange;
+  font-size: 1.25em;
+  }
+
+a {
+  color: black;
+}
+
+span.glyphicon-menu-down {
+    font-size: 50px;
+    font-weight: bold;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: darkgray;
+    text-shadow: 2px 3px lightgray;
+}
+
+span.glyphicon-menu-down:hover, .highlight:hover {
+  color: orange;
+  }
+
+.jumbotron {
+  box-shadow: 2px 5px lightgray;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+/* media queries */
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+}
