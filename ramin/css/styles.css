@@ -29,3 +29,10 @@ img {
   font-size: 1.25em;
   margin: 0 auto;
 }
+
+/*social media icons */
+.fa-large {
+  color: black;
+  padding-right: 10px;
+  font-size: 3em;
+}
