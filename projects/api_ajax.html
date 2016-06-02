@@ -1,17 +1,96 @@
+<head>
+  <!-- bootstrap css-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+</head>
+
+<style>
+.theme-changer {
+  /*display: flex;
+  flex: wrap;*/
+  width: 50%;
+  margin-left: 51%;
+  border: 1px solid green;
+}
+
+.data-request {
+  /*display: flex;
+  flex: wrap;*/
+  width: 50%;
+  margin-right: 51%;
+  border: 1px solid blue;
+}
 
 
+
+</style>
+
+
+<div class="theme-changer">
+    <h1>Theme Changer</h1>
+    <div id="message">
+      A message will appear here.
+    </div>
+    <div>
+      <button id = "getMessage">
+        Change Me
+      </button>
+    </div>
+</div>
+
+
+<div class="container-fluid data-request">
+  <div class = "row">
+    <h1>Data Request</h1>
+    <div class = "col-xs-6 col-lg-6 well" id="data-visual">
+     Data will be displayed here.
+    </div>
+  </div>
+  <div class = "row">
+    <div class = "col-xs-6 col-lg-6">
+      <button id = "getData" class = "btn btn-primary">
+        Get Data
+      </button>
+    </div>
+  </div>
+</div>
 
 <script>
   
-  if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-    $("#data").html("latitude: " + position.coords.latitude + "  <br>longitude: " + position.coords.longitude);
-  });
-}
-  
+    //   if (navigator.geolocation) {
+    //   navigator.geolocation.getCurrentPosition(function(position) {
+    //     $("#location").html("latitude: " + position.coords.latitude + "  <br>longitude: " + position.coords.longitude);
+    //   });
+    // }
+  $(document).ready(function() {
+          
+      // theme changer
+
+      $("#getMessage").click( function() {
+        $("#message").html("hello there I'm a dark theme.");
+        $(".theme-changer").css("background-color", "black");
+        $(".theme-changer > h1").css("color", "white");
+        $("#message").css("color", "white");
+      })
+
+      // var json = 
+      // [
+      //    {"id":"1","pid":"0","type":"Individual","code":"i","status":"1"},
+      //    {"id":"2","pid":"0","type":"Group","code":"g","status":"1"},
+      //    {"id":"15","pid":"0","type":"asdasd","code":"asd","status":"1"},
+      //    {"id":"16","pid":"0","type":"asdas","code":"asd","status":"1"},
+      //    {"id":"17","pid":"0","type":"my check","code":"mt","status":"1"}
+      // ];
+
+
+
+      // $.each(json,function(i,el)
+      // {
+      //    $(".message").html(el.id+' - '+el.type);
+      // });
+    });
 </script>
 
-<div id = "data">
-  <h4>You are here:</h4>
-  
-</div>
+
