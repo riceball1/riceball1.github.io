@@ -1,24 +1,33 @@
 /* general css */
 
-.about-format {
- margin-left: 30px; 
- margin-right: 30px;
- padding: 10px 15px 10px 15px;
- 
+#about {
+  background-color: #EEE;
+  max-height: 80%;
+  padding-bottom: 25%;
 }
 
-.project-box {
+.about-format {
+    margin: 10px 0px 10px 0px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+}
+
+#projects {
+  max-height: 80%;
+}
+
+/*.project-box {
   padding: 30px;
   border:1px solid lightgray;
-  width: 80%;
-  height: 80%;
+  max-height: 80%;
   margin: auto;
   margin-bottom: 10px;
   border-radius: 15px;
-}
+}*/
 
 .big-text {
-  font-size: 1.25em;
+  font-size: 1.45em;
 }
 
 .btn-circle {
@@ -50,8 +59,6 @@ span.glyphicon-menu-down, span.glyphicon-menu-up {
     font-weight: bold;
     display: table;
     margin: 0 auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
     color: gray;
 }
 
@@ -61,7 +68,7 @@ span.glyphicon-menu-down:hover, span.glyphicon-menu-up:hover, .highlight:hover, 
 
 .jumbotron {
   color: black;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
   width: 100%;
 }
 
