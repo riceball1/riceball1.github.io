@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<!-- ng-app run this module when the document loads-->
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body ng-controller="StoreController as store">
+<!-- ng-hide to not show the product if soldOut is true-->
+  <!-- <div ng-hide="store.product.soldOut"> -->
+  <!-- repeat this section for each product in an array called products-->
+  <ul class="list-group">
+  <!-- notice orderBy filters the products by descending price order-->
+    <li class="list-group-item" ng-repeat="product in store.products | orderBy:'-price'">
+    <!-- product name-->
+      <h3>{{product.name}}
+      <!-- product price-->
+      <em class="pull-right">{{product.price | currency}}</em>
+      </h3>
+      <!-- add tabs-->
+      <!-- ng-init initalizes a tab first"-->
+  <section ng-init="tab === 1">
+    <ul class="nav nav-pills">
+      <li ng-class="{active:tab === 1}"><a href ng-click="tab = 1 ">Description</a></li>
+      <li ng-class="{active:tab === 2}"><a href ng-click="tab = 2 ">Specifications</a></li>
+      <li ng-class="{active:tab === 3}"><a href ng-click="tab = 3 ">Reviews</a></li>
+    </ul>
+    <!-- tab panel information -->
+    <div class="panel" ng-show="tab === 1">
+      <h4>Description</h4>
+      <p>{{product.description}}</p>
+    </div>
+    <div class="panel" ng-show="tab === 2">
+      <h4>Specifications</h4>
+      <blockquote>None yet</blockquote>
+    </div>
+    <div class="panel" ng-show="tab === 3">
+      <h4>Reviews</h4>
+      <blockquote>None yet</blockquote>
+    </div>
+  </section>
+    <!-- product description-->
+    <!-- <p>{{product.description}}</p> -->
+    </li>
+  </ul>
+
+
+
+  <!-- only show this button when canPurcahse is true-->
+  <!-- <button ng-show="product.canPurchase"> Add to Cart </button>
+  </div> -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+
+</body>
+</html>
