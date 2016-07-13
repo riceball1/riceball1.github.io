@@ -1,5 +1,6 @@
 /* general css */
 
+
 #about {
   background-color: #EEE;
   max-height: 80%;
@@ -68,8 +69,6 @@ span.glyphicon-menu-down:hover, span.glyphicon-menu-up:hover, .highlight:hover, 
 
 .jumbotron {
   color: black;
-  padding-bottom: 15%;
-  width: 100%;
 }
 
 
@@ -78,31 +77,35 @@ h3 {
 }
 
 .navbar {
-  margin-left: 60%;
   border-radius: 15px;
   background-color: transparent;
   border: none;
 }
 
-#myNavbar {
-  text-align: right;
-}
 
 #about, #projects {
   margin-bottom: 15%;
   margin-top: 20%;
 }
 
+/* navbar header */
+
+.plus {
+  color: orange;
+}
+
+.navbar-brand, .nav {
+  font-size: 1.5em;
+}
+
+
 /* media queries */
 
-@media (max-width: 800px) {
+/*@media (min-width: 960px) {
   h1 {
-    font-size: 60px;
-  }
+    font-size: .25em;
+  }*/
 
-  .navbar {
-    margin-left: 80%;
-  }
 
 
 }
