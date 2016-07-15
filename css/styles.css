@@ -1,6 +1,5 @@
 /* general css */
 
-
 #about {
   background-color: #EEE;
   max-height: 80%;
@@ -41,7 +40,7 @@
   color: orange;
 }
 
-a {
+a:link, a {
   color: black;
 }
 
@@ -76,12 +75,6 @@ h3 {
   text-align: center;
 }
 
-.navbar {
-  border-radius: 15px;
-  background-color: transparent;
-  border: none;
-}
-
 
 #about, #projects {
   margin-bottom: 15%;
@@ -94,10 +87,21 @@ h3 {
   color: orange;
 }
 
-.navbar-brand, .nav {
-  font-size: 1.5em;
+.nav {
+  font-size: 1.25em;
+  letter-spacing: 0.3em;
 }
 
+.navbar-brand {
+  font-size: 2em;
+  padding-right: 70px;
+  font-weight: bold;
+}
+.navbar {
+  border-radius: 15px;
+  background-color: transparent;
+  border: none;
+}
 
 /* media queries */
 
