@@ -55,3 +55,11 @@ a:hover {
  border-bottom-color: 3px solid orange;
 }
 
+
+/* media queries */
+
+@media (max-width: 600px) {
+  .about-text {
+    margin: 0 5% 0 5%;
+  }
+}
