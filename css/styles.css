@@ -1,5 +1,11 @@
 /* general css */
 
+/* 
+standard orange color - rgb(243, 195, 61) 
+
+lightgray color - rgb(192, 191, 187)
+*/
+
 body {
   font-family: 'Quicksand', sans-serif;
 }
@@ -10,15 +16,16 @@ body {
   text-align: center;
 }
 
+/* social media and links */
 
 .btn-circle {
   border-radius: 50px;
-  border-color: lightgray;
+  border-color: rgb(192, 191, 187);
 }
 
 .btn-circle:hover {
   background-color: white;
-  color: orange;
+  color: rgb(243, 195, 61);
 }
 
 a:link, a {
@@ -27,7 +34,7 @@ a:link, a {
 
 a:hover {
   text-decoration: none;
-  color: orange;
+  color: rgb(243, 195, 61);
 }
 
 .btn-social-icon {
@@ -35,26 +42,27 @@ a:hover {
   padding-bottom: 5%;
 }
 
-
 .highlight:hover, .btn-social-icon:hover {
-  color: orange;
+  color: rgb(243, 195, 61);
   }
 
+/* jumbotron */
+
+.plus {
+  color: rgb(243, 195, 61);
+}
 
 /* navbar header */
 
-.navbar-default, .navbar-collapse {
-  border-color: none;
+.small-note {
+  width: 50%;
+  height: 30%;
+  display: inline-block;
 }
 
-.plus {
-  color: orange;
+footer {
+  background-color: rgb(192, 191, 187);
 }
-
-.navbar {
- border-bottom-color: 3px solid orange;
-}
-
 
 /* media queries */
 
