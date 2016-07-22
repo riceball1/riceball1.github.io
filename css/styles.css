@@ -59,6 +59,11 @@ a:hover {
   color: rgb(243, 195, 61);
 }
 
+.dana-profile {
+  width: 25%;
+  height: 25%;
+}
+
 /* jumbotron */
 
 .plus {
@@ -92,7 +97,15 @@ footer {
 /* media queries */
 
 @media (max-width: 600px) {
+  
   .about-text {
     margin: 0 5% 0 5%;
   }
+
+  .dana-profile {
+    width: 40%;
+    height: 40%;
+  }
+
+
 }
