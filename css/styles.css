@@ -7,11 +7,21 @@ body {
 
 #about {
   background-color: #EEE;
-  height: 40px;
+  height: 25%;
   width: 50%;
-  padding-bottom: 25%;
 }
 
+.about-text {
+  margin: 0 auto;
+  font-size: 1.6em;
+}
+
+.dana-soccer {
+  float: left;
+  height: 40%;
+  width: 40%;
+  margin: 0 auto;
+}
 /*.about-format {
     margin: 10px 0px 10px 0px;
     padding-left: 15%;
