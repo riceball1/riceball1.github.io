@@ -4,47 +4,12 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-
-#about {
-  background-color: #EEE;
-  height: 25%;
-  width: 50%;
-}
-
 .about-text {
-  margin: 0 auto;
   font-size: 1.6em;
+  margin: 0 15% 0 15%;
+  text-align: center;
 }
 
-.dana-soccer {
-  float: left;
-  height: 40%;
-  width: 40%;
-  margin: 0 auto;
-}
-/*.about-format {
-    margin: 10px 0px 10px 0px;
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: justify;
-}*/
-
-/*#projects {
-  max-height: 80%;
-}*/
-
-/*.project-box {
-  padding: 30px;
-  border:1px solid lightgray;
-  max-height: 80%;
-  margin: auto;
-  margin-bottom: 10px;
-  border-radius: 15px;
-}*/
-
-/*.big-text {
-  font-size: 1.45em;
-}*/
 
 .btn-circle {
   border-radius: 50px;
@@ -70,62 +35,23 @@ a:hover {
   padding-bottom: 5%;
 }
 
-/*span.glyphicon-menu-down, span.glyphicon-menu-up {
-    font-size: 30px;
-    font-weight: bold;
-    display: table;
-    margin: 0 auto;
-    color: gray;
-}*/
 
 .highlight:hover, .btn-social-icon:hover {
   color: orange;
   }
 
-.jumbotron {
-  color: black;
-}
-
-
-h3 {
-  text-align: center;
-}
-
-/*
-#about, #projects {
-  margin-bottom: 15%;
-  margin-top: 20%;
-}*/
 
 /* navbar header */
+
+.navbar-default, .navbar-collapse {
+  border-color: none;
+}
 
 .plus {
   color: orange;
 }
 
-/*.nav {
-  font-size: 1.25em;
-  letter-spacing: 0.3em;
-}
-
-.navbar-brand {
-  font-size: 2em;
-  padding-right: 70px;
-  font-weight: bold;
-}
 .navbar {
-  border-radius: 15px;
-  background-color: transparent;
-  border: none;
-}*/
-
-/* media queries */
-
-/*@media (min-width: 960px) {
-  h1 {
-    font-size: .25em;
-  }*/
-
-
-
+ border-bottom-color: 3px solid orange;
 }
+
