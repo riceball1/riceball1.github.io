@@ -64,6 +64,17 @@ footer {
   background-color: rgb(192, 191, 187);
 }
 
+
+.glyphicon-th-large, .navbar-brand {
+  font-size: 30px;
+  color: rgb(243, 195, 61);
+}
+
+.navbar-brand, .navbar-nav {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 /* media queries */
 
 @media (max-width: 600px) {
