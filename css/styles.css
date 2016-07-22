@@ -15,9 +15,14 @@ body {
 }
 
 .about-text {
-  font-size: 1.6em;
   margin: 0 15% 0 15%;
+  font-size: 1.6em;
   text-align: center;
+}
+
+.bio {
+  margin: 0 15% 0 15%;
+  padding: 5%;
 }
 
 /* social media and links */
@@ -49,6 +54,10 @@ a:hover {
 .highlight:hover, .btn-social-icon:hover {
   color: rgb(243, 195, 61);
   }
+
+.gold {
+  color: rgb(243, 195, 61);
+}
 
 /* jumbotron */
 
