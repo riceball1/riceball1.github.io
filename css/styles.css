@@ -10,6 +10,10 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+#about {
+  margin-bottom: 20px;
+}
+
 .about-text {
   font-size: 1.6em;
   margin: 0 15% 0 15%;
