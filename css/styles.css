@@ -60,15 +60,15 @@ a:hover {
   padding-bottom: 5%;
 }
 
-span.glyphicon-menu-down, span.glyphicon-menu-up {
+/*span.glyphicon-menu-down, span.glyphicon-menu-up {
     font-size: 30px;
     font-weight: bold;
     display: table;
     margin: 0 auto;
     color: gray;
-}
+}*/
 
-span.glyphicon-menu-down:hover, span.glyphicon-menu-up:hover, .highlight:hover, .btn-social-icon:hover {
+.highlight:hover, .btn-social-icon:hover {
   color: orange;
   }
 
