@@ -59,9 +59,19 @@ a:hover {
   color: rgb(243, 195, 61);
 }
 
+/* images */
+
 .dana-profile {
   width: 25%;
   height: 25%;
+}
+
+
+.dana-biking {
+  width: 190px;
+  height: 200px;
+  margin: auto;
+  display: block;
 }
 
 /* jumbotron */
@@ -106,6 +116,5 @@ footer {
     width: 40%;
     height: 40%;
   }
-
 
 }
