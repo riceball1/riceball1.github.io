@@ -1,0 +1,33 @@
+<template name="navbar">
+  <div class="navbar" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="glyphicon glyphicon-th-large"></span>                       
+      </button>
+        <a href="/" class="navbar-brand">Minimalism</a>
+      </div>
+
+      <div class="navbar-collapse collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="about">About</a></li>
+          <li>
+            <a href="tips">Tips</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          {{#if currentUser}}
+          <li>
+            <a href="/admin/blog">Admin</a>
+          </li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+    <button type="button" class="sign-in pull-right">
+        {{> loginButtons align="right"}}
+    </button>
+</template>
+

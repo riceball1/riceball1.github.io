@@ -1,0 +1,182 @@
+/** general **/
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  padding-bottom: 120px;
+}
+
+p, li {
+  font-size: 1.2em;
+}
+
+h1, h2 {
+  color: rgb(51, 153, 127);
+}
+
+a {
+  color: black;
+}
+
+ul.checkmark {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul.checkmark li:before {
+    content: "\2713\0020";
+}
+
+
+/** navbar **/
+.glyphicon-th-large {
+  color: black;
+  font-size: 20px;
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+  color: rgb(51, 153, 127);
+}
+
+
+/** login-button w/ bootstrap pull-right**/
+.sign-in {
+  border-radius: 5px;
+  padding: 5px 25px 5px 25px;
+  border: none;
+  margin-right: 10px;
+  top: -30px;
+  position: relative;
+  background-color: rgb(51, 153, 127);
+  color: black;
+}
+
+
+/** home page **/
+
+.home {
+  margin: 15px;
+}
+
+.jumbotron {
+  margin-top: 15px;
+}
+
+.js-first-time {
+  border-radius: 10px;
+  background-color: rgb(51, 153, 127);
+  padding: 15px;
+  border: none;
+  font-size: 1.2em;
+}
+
+#first-time-user {
+  display: none;
+  margin: 5px;
+  padding: 5px;
+  border: 1px dashed lightgray;
+}
+
+/** tips page **/
+
+.tips {
+  margin: 15px;
+  padding: 15px;
+}
+
+
+.tips-text {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px dashed lightgray;
+  border-radius: 30px;
+}
+
+.num {
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+
+  -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid lightgray;
+}
+
+/** about page **/
+
+.about {
+  margin: 15px;
+  padding: 15px;
+}
+
+
+/** blog pages **/
+
+.meteor-blog-post-main {
+  margin: 5%;
+  border: 1px solid lightgray;
+}
+
+.commentable-section {
+  margin: 5%;
+  width: 80%;
+  display: block;
+  font-size: 1.5em;
+}
+
+.meteor-blog-post-meta {
+  font-size: 1.2em;
+}
+
+.meteor-blog-back-link {
+  margin: 5%;
+  font-size: 1.5em;
+}
+
+.share-buttons {
+  border-radius: 15px;
+  margin-right: 5%;
+}
+
+
+/** blog index page **/
+
+.meteor-blog-index {
+  margin: 15px auto;
+  /*border: 3px solid black;*/
+  padding: 0;
+  text-align: center;
+}
+
+.meteor-blog-post-excerpt {
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.meteor-blog-index h2 a {
+  color: rgb(51, 153, 127);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+div.meteor-blog-post {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/** footer **/
+.foot {
+  background-color: rgb(51, 153, 127);
+  color: yellow;
+  float: left;
+}

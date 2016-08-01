@@ -1,0 +1,32 @@
+<template name="home">
+  <div class="container">
+  <button class="js-first-time">First Time User?</button>
+  <div id="first-time-user">
+    <p>To begin blogging, you can sign in as one of the users below:</p>
+        <ul>
+          <li>bunny@test.com</li>
+          <li>cat@test.com</li>
+          <li>panda@test.com</li>
+          <li>penguin@test.com</li>
+        </ul>
+        <p>The password for all users is test123. You can also create your own account.</p>
+    <br>
+    <button id="js-close">close</button>
+  </div>
+  <div class="row">
+  <div class="jumbotron">
+    <h1>Minimalism</h1> 
+    <p>Minimalism is a tool that can free you from consumerism and help you to gain the freedom to experience life fully. This is a blog site about all things minimalism. Feel free to add your thoughts to the community.</p> 
+  </div> 
+  <div class="col-sm-6">
+    <ul>
+      <li>Sign-In to start blogging</li> 
+      <li>Check out the <a href="tips"><strong>Tips page</strong></a> for tips on how to be a minimalist</li> 
+    </ul>
+  </div>
+  <div class="col-sm-6">
+  {{> blogLatest num=3}}
+  </div>
+  </div>
+</div>
+</template>
