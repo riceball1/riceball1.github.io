@@ -104,6 +104,22 @@ footer {
   font-weight: bold;
 }
 
+
+
+/** works page **/
+
+#works {
+  padding: 10px;
+  text-align: center;
+}
+
+div.project-display {
+  padding: 5%;
+  border:1px solid lightgray;
+
+}
+
+
 /* media queries */
 
 @media (max-width: 600px) {
