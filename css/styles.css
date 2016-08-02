@@ -108,15 +108,19 @@ footer {
 
 /** works page **/
 
-#works {
-  padding: 10px;
+
+
+/** skills page **/
+
+
+.page-title {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-div.project-display {
-  padding: 5%;
+#skills {
+  margin-top: 15px;
   border:1px solid lightgray;
-
 }
 
 
