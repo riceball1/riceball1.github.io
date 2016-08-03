@@ -113,16 +113,29 @@ footer {
 /** skills page **/
 
 
-.page-title {
+.page-title{
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
+  color:rgb(243, 195, 61);
+}
+
+.page-title small {
+  color: black;
+  font-weight: bold;
 }
 
 #skills {
-  margin-top: 15px;
   border:1px solid lightgray;
 }
 
+.tech-list li {
+  display: inline-flex;
+  list-style: none;
+  margin: 15px;
+  padding: 15px;
+  font-size: 1.2em;
+}
 
 /* media queries */
 
