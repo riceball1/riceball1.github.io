@@ -75,6 +75,10 @@ a:hover {
 
 /* jumbotron */
 
+.jumbotron h1 {
+  font-family: 'Crimson Text';
+}
+
 .plus {
   color: rgb(243, 195, 61);
 }
@@ -104,6 +108,10 @@ footer {
   font-weight: bold;
 }
 
+.navbar-brand {
+  font-family: 'Crimson Text';
+}
+
 
 
 /** works page **/
@@ -118,6 +126,7 @@ footer {
   margin-bottom: 30px;
   font-weight: bold;
   color:rgb(243, 195, 61);
+  font-family: 'Crimson Text';
 }
 
 .page-title small {
