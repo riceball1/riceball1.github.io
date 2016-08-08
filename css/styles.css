@@ -115,6 +115,14 @@ footer {
 
 /** works page **/
 
+#works .box {
+  border: 1px solid black;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 /** skills page **/
