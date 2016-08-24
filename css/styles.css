@@ -134,14 +134,18 @@ a:hover {
 
 .flexbox-container {
   display: flex;
+  flex-direction: row;
   flex-flow: wrap;
   justify-content-content: space-between;
+  text-align: center;
 }
 
 .flex-child {
-  width: 100px;
-  height: 100px;
+  width: 30%;
+  height: 300px;
   margin: auto;
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
 }
 /** skills page **/
 

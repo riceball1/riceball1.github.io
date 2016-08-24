@@ -1,7 +1,7 @@
  $(document).ready(function(){
     
   // jQuery animation for works.html page
-    $('div.eq').hover(function() {
+    $('.flexbox-container > div').hover(function() {
       $(this).css('background-color', 'rgb(243, 195, 61)');
       $(this).css('font-weight', 'bold');
     },
