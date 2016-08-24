@@ -1,26 +1,13 @@
  $(document).ready(function(){
     
-
-//     // make the scrolling smoothier using jQuery scrollTop()
-//     var $root = $('html, body');
-//    $('a').click(function(){
-//         $root.animate({
-//         scrollTop: $( $.attr(this, 'href') ).offset().top
-//     }, 800);
-//     return false;
-// });
-
-  $('.box').click(function(){
-    $(this).animate({
-        left: '250px',
-        height: '+=20px',
-        width: '+=20px'
-      });
-  });
-
-  $('.reset').on('click', function(){
-    $('.box').css('height', '100px');
-    $('.box').css('width', '100px');
-  });
+  // jQuery animation for works.html page
+    $('div.eq').hover(function() {
+      $(this).css('background-color', 'rgb(243, 195, 61)');
+      $(this).css('font-weight', 'bold');
+    },
+    function() {
+       $(this).css('background-color', '');
+      $(this).css('font-weight', '');
+    });
 
  });
