@@ -3,22 +3,33 @@ body {
 	padding: 15px;
 }
 
-h1 {
-	text-align: center;
-	color: lightgray;
+.jumbotron {
+	padding: 20px;
+	width: 100%;
 }
 
-.description-box {
+button#restaurant-new-user {
+	padding: 5px;
+	margin: 15px;
+}
+
+.restaurant-description-box {
 	padding: 30px;
 	margin: 15px;
 	border: 1px dashed lightpink;
 	width: 30%;
 	height: 30%;
+	display: none;
 }
 
+
+// issue of this div underlapping 
+// conflict with bootstrap css?
 #menu div {
-	position: fixed;	
+	position: absolute;
+	z-index: 15;
 }
+
 
 /* slide show parts */
 

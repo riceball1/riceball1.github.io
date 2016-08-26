@@ -13,6 +13,9 @@
 		//create the image rotator
 		var rotate = setInterval("rotateImages()", 4000);
 
+		$('#restaurant-new-user').on('click', function() {
+			$('.restaurant-description-box').toggle();
+		});
 		
 	});
 
