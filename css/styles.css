@@ -147,8 +147,22 @@ a:hover {
   width: 450px;
   height: 300px;
   margin: auto;
+  padding: 15px;
   border: 1px solid lightgray;
   margin-bottom: 10px;
+}
+
+.flex-child img {
+  padding: 15px;
+}
+
+.flex-child a:link, .flex-child a {
+  color: black;
+}
+
+.flex-child a:hover {
+  text-decoration: none;
+  color: black;
 }
 /** skills page **/
 
