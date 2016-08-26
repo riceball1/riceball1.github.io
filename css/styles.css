@@ -45,6 +45,7 @@ div.container.bio {
 .bio {
   margin: 5% 10% 30% 10%;
   padding: 15px;
+  font-size: 1.4em;
 }
 
 /* social media and links */
@@ -150,6 +151,10 @@ a:hover {
   padding: 15px;
   border: 1px solid lightgray;
   margin-bottom: 10px;
+}
+
+.flex-child p, .flex-child h4 {
+  font-size: 1.4em;
 }
 
 .flex-child img {
