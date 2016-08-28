@@ -12,26 +12,80 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <body>
 
-<div class="jumbotron">
-	<h1>Jacque Query's Restaurant</h1>
-	<p>Some of the world's most popular dishes served fresh everyday</p>
+<!-- bootstrap navbar-->
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Bobo's Bubble Tea Shop</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      	<ul class="nav navbar-nav">
+	      		<li><a href="http://www.danafng.com/works.html">Home</a></li>
+				<li class="active"><a href="#menu-section">Menu</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Our Locations</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div><!-- end of .navbar-collapse -->
+	</div> <!-- end of .container-fluid -->
+</nav>
+
+<section id="main-section" class="main-text text-center">
+		<h1 class="slogan">Freshest Bubble Tea in Sea City</h1>
+		<br>
+		<span class="glyphicon glyphicon-menu-down"></span>
+</section>
+
+<div class="images">
+	<img src="http://i.huffpost.com/gen/1215802/images/o-BOBA-facebook.jpg">
+	<div class="info">social media</div>
 </div>
 
-<button class="btn btn-default" id="restaurant-new-user">New User?</button>
-<div class="restaurant-description-box">
-	<p class="text-center center-block">This website uses jQuery 3.1 and Bootstrap 3.3.7 </p>
-	<p>Return to <a href="http://www.danafng.com/works.html"><span>main website</span></a></p>
-</div>
+<!-- <div id="hero">
+			<div class="current"><img src="http://i.huffpost.com/gen/1215802/images/o-BOBA-facebook.jpg"></div>
+			<div><img src="https://img.grouponcdn.com/deal/6c9Pn6f6C6kfzJZ9HrHQ/8Z-2048x1229/v1/c700x420.jpg"></div>
+			<div><img src="https://i.ytimg.com/vi/xqhMkmu3zUQ/maxresdefault.jpg"></div>
+</div> -->
 
-<div class="container">
+<section id="menu-section">
+	<h2>Bubble Tea</h2>
+	<p>Made from Loose Leaf Organic Tea<p>
+
+	<ul class="menu">
+		<li>Green/Black Tea 3/4</li>
+		<li>Milk Tea 3.4/4.5</li>
+		<li>Thai Milk Tea 3.75/4.75</li>
+		<li>Taro Milk Tea 3.4/4.5</li>
+	</ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- this does a slide show of images -->
+<!-- <div class="container">
 <div class="row">
 		<div id="hero" class="col-xs-12 col-sm-6">
 				<div class="current"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9gmRlVtmHh1DSEffOL6p2j9m_WuUrlKuMFZk8r0EqQMVe4bY"></div>
 				<div><img src="http://wtop.com/wp-content/uploads/2015/10/ThinkstockPhotos-174709526-1880x1254.jpg"></div>
-			<!-- <div class="current">This is the first slide.</div>
-			<div>This is the 2nd slide.</div>
-			<div>This is the third slide.</div> -->
 		</div>
+
 		<div id="menu" class="col-xs-12 col-sm-6">
 			<button class="btn btn-default">Stop/Start Animation</button>
 			<p>This button handles starting and stopping the animation by clearing the Interval and setting the Interval.</p>
@@ -41,18 +95,15 @@
 		</div>
 		</div>
 </div>
+ -->
 
-
-<!-- functions to enhance the slide show -->
-	<!-- add photo -->
-	<!-- change speed? -->
-	<!-- stop looping and restart-->
 
 
 
 <!-- place at bottom to load DOM before jQuery -->
 <!-- external css and js files latest version at the time-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
 
 <!-- customized js files -->
 <script src="demo-restaurant.js""></script>

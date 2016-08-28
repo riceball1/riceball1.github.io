@@ -16,7 +16,7 @@
 		$('#restaurant-new-user').on('click', function() {
 			$('.restaurant-description-box').toggle();
 		});
-		
+
 	});
 
 
