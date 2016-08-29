@@ -19,22 +19,17 @@ body {
   margin-bottom: 60px;
 }
 
-.main-image {
-  margin: 0 5% 0 5%;
-  padding: 10%;
-}
-
 
 /* bio page */
 
 
 #about {
-  margin-bottom: 5%;
+  margin: 0 5% 0 5%;
+  padding: 0 10% 10% 10%;
 }
 
 .about-text {
-  margin: 0 15% 0 15%;
-  font-size: 1.6em;
+  font-size: 2em;
   text-align: center;
 }
 

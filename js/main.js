@@ -1,6 +1,8 @@
- $(document).ready(function(){
+$(function(){
     
-  // jQuery animation for works.html page
+    jumbotronFn();
+
+     // jQuery animation for works.html page
     $('.flexbox-container > div').hover(function() {
       $(this).css('background-color', 'rgb(243, 195, 61)');
       $(this).css('font-weight', 'bold');
@@ -11,3 +13,10 @@
     });
 
  });
+
+ function jumbotronFn() {
+    	$('.jumbotron').slideUp(7000);
+   }
+    
+   
+
