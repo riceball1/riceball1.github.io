@@ -1,6 +1,6 @@
 $(function(){
     
-    jumbotronFn();
+    // jumbotronFn();
 
      // jQuery animation for works.html page
     $('.flexbox-container > div').hover(function() {
@@ -14,9 +14,9 @@ $(function(){
 
  });
 
- function jumbotronFn() {
-    	$('.jumbotron').slideUp(7000);
-   }
+ // function jumbotronFn() {
+ //    	$('.jumbotron').slideUp(7000);
+ //   }
     
    
 
