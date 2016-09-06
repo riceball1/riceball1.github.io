@@ -93,8 +93,8 @@ a:hover {
 
 /* jumbotron */
 
-.jumbotron h1 {
-  font-family: 'Crimson Text';
+.jumbotron h1, .footer {
+  font-family:'Special Elite', sans-serif;
 }
 
 .plus {
@@ -113,7 +113,7 @@ a:hover {
 }
 
 .navbar-brand {
-  font-family: 'Crimson Text';
+  font-family: 'Special Elite', sans-serif;
 }
 
 
@@ -186,7 +186,7 @@ img.works-image {
   margin-bottom: 30px;
   font-weight: bold;
   color:rgb(243, 195, 61);
-  font-family: 'Crimson Text';
+  font-family: 'Special Elite', sans-serif;
 }
 
 .page-title h3 {
