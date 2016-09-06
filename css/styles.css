@@ -140,8 +140,8 @@ a:hover {
 }
 
 .flex-child {
-  width: 450px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   margin: auto;
   padding: 15px;
   border: 1px solid lightgray;
@@ -210,18 +210,10 @@ img.works-image {
 /* media queries */
 
 @media (max-width: 600px) {
-  
-  // .about-text {
-  //   margin: 0 5% 0 5%;
-  // }
 
   .dana-profile {
     width: 50%;
     height: 50%;
-  }
-
-  .vancouver {
-    width: 100%;
   }
 
 }
