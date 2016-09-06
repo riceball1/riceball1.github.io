@@ -1,0 +1,26 @@
+/* main css for landing page*/
+
+
+
+
+/* about section */
+
+#about {
+  margin: 0 5% 0 5%;
+  padding: 0 10% 10% 10%;
+}
+
+.about-text {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.container {
+	opacity: 0.5;
+}
+
+.jumbotron {
+	background-image: url('http://www.danafng.com/images/dana-nature.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
