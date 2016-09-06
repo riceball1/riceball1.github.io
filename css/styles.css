@@ -29,7 +29,7 @@ body {
 }
 
 .about-text {
-  font-size: 2em;
+  font-size: 1.4em;
   text-align: center;
 }
 
@@ -97,6 +97,7 @@ a:hover {
 .jumbotron h1, .footer {
   font-family:'Special Elite', sans-serif;
 }
+
 
 .plus {
   color: rgb(243, 195, 61);
