@@ -63,6 +63,28 @@
         }
     }
     
+    .text-box {
+        position: fixed;
+        width: 300px;
+        border-radius: 30px;
+        background-color: @lightgray;
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        display: none;
+        .inner-text-box {
+            text-align: center;
+        }
+        .close-text {
+            color: @coral;
+            text-align: left;
+            padding: 15px;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    
     footer {
         padding: 25px 0;
         background-color: @blk;

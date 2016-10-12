@@ -1,11 +1,23 @@
-$(document).ready(function() {
+var txtbox = $('.text-box');
 
-    $('.national-parks').on('click', function() {
-        $('.parks-list').toggle();
+$(document).ready(function() {
+    // runs textBox after 7 secs
+    setTimeout(textBox, 7000);
+    // closes after 40 secs
+    setTimeout(closeBox, 40000);
+
+    // closes text-box 
+    $('.close-text').on('click', function() {
+        txtbox.slideToggle();
     });
 
-    $('.na').on('click', function() {
-        $('.na-countries').toggle();
-    })
-
 });
+
+
+function textBox() {
+    txtbox.slideToggle();
+}
+
+function closeBox() {
+    txtbox.slideToggle();
+}
