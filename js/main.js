@@ -19,5 +19,5 @@ function textBox() {
 }
 
 function closeBox() {
-    txtbox.slideToggle();
+    txtbox.css('display', 'none');
 }
