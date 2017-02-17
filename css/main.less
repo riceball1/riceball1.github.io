@@ -47,35 +47,47 @@
             }
         }
     }
-
+    
     .describe-me {
         color: @coral;
     }
-
-        .typewriter h1 {
-            line-height: 1.2em;
-          overflow: hidden; /* Ensures the content is not revealed until the animation */
-          border-right: .10em solid @coral; /* The typwriter cursor */
-          white-space: nowrap; /* Keeps the content on a single line */
-          margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-          // letter-spacing: .02em; /* Adjust as needed */
-          animation: 
-            typing 2.5s steps(30, end),
-            blink-caret .75s step-end infinite;
+    
+    .typewriter h1 {
+        width: 70%;
+        line-height: 1.2em;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .10em solid @coral;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        // letter-spacing: .02em; /* Adjust as needed */
+        animation: typing 2.5s steps(30, end), blink-caret .75s step-end infinite;
+    }
+    /* The typing effect */
+    
+    @keyframes typing {
+        from {
+            width: 0
         }
-
-        /* The typing effect */
-        @keyframes typing {
-          from { width: 0 }
-          to { width: 100% }
+        to {
+            width: 70%;
         }
-
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
-          from, to { border-color: transparent }
-          50% { border-color: @coral; }
+    }
+    /* The typewriter cursor effect */
+    
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent
         }
-
+        50% {
+            border-color: @coral;
+        }
+    }
+    
     section {
         padding: 15px;
         max-width: 500px;
@@ -90,7 +102,7 @@
             font-size: 16px;
         }
     }
-
+    
     .text-box {
         position: fixed;
         width: 300px;
@@ -112,7 +124,7 @@
             }
         }
     }
-
+    
     footer {
         padding: 25px 0;
         background-color: @blk;
@@ -135,7 +147,7 @@
             }
         }
     }
-
+    
     @keyframes font-change {
         from {
             top: 0px;
@@ -144,7 +156,7 @@
             top: 200px;
         }
     }
-
+    
     @-webkit-keyframes font-change {
         from {
             top: 0px;
@@ -153,7 +165,7 @@
             top: 200px;
         }
     }
-
+    
     .navbar-header {
         .navbar-brand {
             font-weight: 800;
@@ -164,7 +176,7 @@
             }
         }
     }
-
+    
     .navbar-nav>li>a {
         border-radius: 15px;
         font-weight: bold;
@@ -174,12 +186,12 @@
             transition: font-size 2s ease;
         }
     }
-
+    
     button.navbar-toggle {
         color: @coral;
         font-size: 20px;
     }
-
+    
     header {
         margin-top: 60px;
         padding-top: 60px;
@@ -205,41 +217,6 @@
                 position: relative;
                 max-width: 500px;
                 margin: 0 auto;
-            }
-        }
-    }
-
-    //* MEDIA QUERIES *//
-    @media (min-width: 768px) {
-        header {
-            // min-height: 100%;
-            .header-content {
-                height: 100vh;
-                padding: 0;
-                text-align: left;
-                .header-content-inner {
-                    position: absolute;
-                    top: 50%;
-                    max-width: none;
-                    margin: 0;
-                    transform: translateY(-50%);
-                    h1 {
-                        font-size: 45px;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (min-width: 992px) {
-        header .header-content .header-content-inner {
-            position: absolute;
-            top: 50%;
-            max-width: 75%;
-            margin: 0;
-            transform: translateY(-50%);
-            h1 {
-                font-size: 50px;
             }
         }
     }
