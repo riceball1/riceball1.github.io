@@ -1,3 +1,34 @@
-@import 'colors.less';
-@import 'fonts.less';
-@import 'main.less';
+* {
+	box-sizing: border-box;
+}
+
+/***** GENERAL BODY STYLING *****/
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	h1, p {
+		text-align: center;
+	}
+
+}
+
+
+/**** SCROLLING EFFECTS ***/
+
+/* Consider Parallax https://www.w3schools.com/howto/howto_css_parallax.asp */
+
+.parallax { 
+    /* The image used */
+    background-image: url("../images/mountain.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
