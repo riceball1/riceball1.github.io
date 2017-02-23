@@ -1,4 +1,5 @@
 /**** COLORS ***/
+/* box shadowing */
 * {
   box-sizing: border-box;
 }
@@ -14,13 +15,11 @@ body p {
 }
 body p {
   font-size: 1.2em;
-  color: #C0C0C0;
 }
 body div.card {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  background-color: transparent;
 }
 body div.header {
   width: 100%;
@@ -38,17 +37,16 @@ body div.text-box {
   width: 60%;
   margin: 0 auto;
   line-height: 2.5em;
-  color: #C0C0C0;
   letter-spacing: 0.1em;
   font-weight: 100;
 }
 body a {
   text-decoration: none;
-  color: #C0C0C0;
-  border-bottom: 1.2px #F08080 dotted;
+  color: black;
+  border-bottom: 1.2px #C0C0C0 dotted;
 }
 body a:hover {
-  color: black;
+  color: #F08080;
 }
 /**** SCROLLING EFFECTS ***/
 /* Consider Parallax https://www.w3schools.com/howto/howto_css_parallax.asp */
