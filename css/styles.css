@@ -1,3 +1,4 @@
+/**** COLORS ***/
 * {
   box-sizing: border-box;
 }
@@ -9,12 +10,54 @@ body {
 body h1,
 body p {
   text-align: center;
+  font-weight: 100;
+}
+body p {
+  font-size: 1.2em;
+  color: #C0C0C0;
+}
+body div.card {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+body div.header {
+  width: 100%;
+  color: #000;
+  padding: 10px;
+  font-size: 40px;
+}
+body div.header h1 {
+  text-shadow: 2px 2px 4px #FFF;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+}
+body div.text-box {
+  padding: 10px;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 2.5em;
+  color: #C0C0C0;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+body a {
+  text-decoration: none;
+  color: #C0C0C0;
+  border-bottom: 1.2px #F08080 dotted;
+}
+body a:hover {
+  color: black;
 }
 /**** SCROLLING EFFECTS ***/
 /* Consider Parallax https://www.w3schools.com/howto/howto_css_parallax.asp */
-.parallax {
+.parallax-top {
   /* The image used */
   background-image: url("../images/mountain.jpg");
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
   /* Full height */
   height: 500px;
   /* Create the parallax scrolling effect */
@@ -22,4 +65,24 @@ body p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.parallax-bottom {
+  /* The image used */
+  background-image: url("../images/desert.jpg");
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  /* Full height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*** MEDIA QUERIES **/
+@media only screen and (max-width: 768px) {
+  body div.text-box {
+    width: 80%;
+  }
 }

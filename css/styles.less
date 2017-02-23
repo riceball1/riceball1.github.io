@@ -1,3 +1,8 @@
+/**** COLORS ***/
+@lightcoral: #F08080;
+@silver: #C0C0C0;
+
+
 * {
 	box-sizing: border-box;
 }
@@ -10,19 +15,68 @@ body {
 	height: 100%;
 	h1, p {
 		text-align: center;
+		font-weight: 100;
 	}
 
+	p {
+		font-size: 1.2em;
+		color: @silver;
+	}
+
+
+	div.card {
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		background-color: transparent;
+	}
+
+	div.header {
+		width: 100%;
+	    // background-color: @silver;
+	    color: #000;
+	    padding: 10px;
+	    font-size: 40px;
+	    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	    h1 {
+    		text-shadow: 2px 2px 4px #FFF;
+    		font-size: 1.2em;
+    		letter-spacing: 0.2em;
+	    }
+	}
+
+	div.text-box {
+	    padding: 10px;
+	    width: 60%;
+	    margin: 0 auto;
+	    line-height: 2.5em;
+	    color: @silver;
+	    letter-spacing: 0.1em;
+	    font-weight: 100;
+	}
+
+	a {
+		text-decoration: none;
+		color: @silver;
+		border-bottom: 1.2px @lightcoral dotted;
+		&:hover {
+			color: black;
+		}
+	}
 }
+
+
 
 
 /**** SCROLLING EFFECTS ***/
 
 /* Consider Parallax https://www.w3schools.com/howto/howto_css_parallax.asp */
 
-.parallax { 
+.parallax-top { 
     /* The image used */
     background-image: url("../images/mountain.jpg");
-
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
     /* Full height */
     height: 500px; 
 
@@ -31,4 +85,30 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax-bottom { 
+    /* The image used */
+    background-image: url("../images/desert.jpg");
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*** MEDIA QUERIES **/
+
+@media only screen and (max-width: 768px) {
+    body {
+        div.text-box {
+        	width: 80%;
+        }
+    }
 }
