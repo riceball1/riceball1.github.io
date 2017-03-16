@@ -1,98 +1,215 @@
-/**** COLORS ***/
-@lightcoral: #F08080;
-@silver: #C0C0C0;
-@coral: #EC7063;
-@evergreen: #397152;
-@jade: #6dc066;
-@card: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* box shadowing */
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Roboto', sans-serif;
+/** GENERAL **/
 
-* {
-	box-sizing: border-box;
+/** grid.less and normalize.css helps to set the foundation for the customed styles**/
+
+
+/** FOOTER - html/body needs to be given 
+sizing to help with footer**/
+
+html {
+	position: relative;
+	min-height: 100%;
+  a {
+    text-decoration: none;
+    color: @darkgray;
+  }
 }
-
-/***** GENERAL BODY STYLING *****/
-
 
 body {
-	font-family: 'Open Sans', sans-serif;
+  margin-top: 80px;
+	margin-bottom: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
 
-	a {
-		color: white;
-		&:hover {
-		color: @coral;
-		}
-	}
-
-	.fa {
-		font-size: 2em;
-		padding: 5px;
-	}
-	/** CARD STYLE **/
-	#card {
-		-webkit-box-shadow: 13px 31px 39px -5px rgba(130,126,130,1);
-		-moz-box-shadow: 13px 31px 39px -5px rgba(130,126,130,1);
-		box-shadow: 13px 31px 39px -5px rgba(130,126,130,1);
-
-		width: 80%;
-		height: 600px;
-		padding: 10px;
-		text-align: center;
-		height: 20%;
-		margin: 50px auto;
-		background-color: @jade;
-		// color: ;
-		border-radius: 5px;
-		.header {
-			margin: 0px auto;
-			padding: 10px;
-			p {
-				width: 80%;
-				margin: 10px auto;
-				padding: 5px;
-				line-height: 40px;
-				letter-spacing: 0.5px;
-			}
-		}
-	}
-
+/** fixed height footer **/
+footer {
+	position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  background-color: @white;
+  color: @darkgray;
+  border-top: 1px solid @lightgray;
+  text-align: center;
 }
 
 
-/**** SCROLLING EFFECTS ***/
+/** NAV BAR **/
 
-/* Consider Parallax https://www.w3schools.com/howto/howto_css_parallax.asp */
+//vertical navbar
+// nav {
+//   font-size: 2em;
+//   ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     width: 200px;
+//     background-color: @lightgray;
+//   }
 
-// .parallax-top { 
-//     /* The image used */
-//     background-image: url("../images/mountain.jpg");
-//      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-//     filter: grayscale(100%);
-//     /* Full height */
-//     height: 500px; 
+//   li a {
+//     display: block;
+//     color: @black;
+//     padding: 8px 16px;
+//     text-decoration: none;
+//   }
 
-//     /* Create the parallax scrolling effect */
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
+//   /* Change the link color on hover */
+//   li a:hover {
+//     background-color: #555;
+//     color: @white;
+//   }
 // }
+nav {
+    background-color: @white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid @lightgray;
+    ul {
+      list-style-type: none;
+    }
+  li a {
+    float: left;
+    display: block;
+    color: @darkgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    &:hover {
+      color: @lightpink;
+    }
+  }
+}
 
-// .parallax-bottom { 
-//     /* The image used */
-//     background-image: url("../images/desert.jpg");
-//      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-//     filter: grayscale(100%);
-//     /* Full height */
-//     height: 500px; 
-
-//     /* Create the parallax scrolling effect */
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
 
 
-/*** MEDIA QUERIES **/
+
+/** HEADER **/
+
+header {
+	text-align: center;
+	h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: @darkgray;
+    padding: 10px;
+    margin: 0px;
+	}
+}
+
+/** STYLING EFFECTS **/
+
+/* text-shadow */
+
+.text-shadow {
+	text-shadow: #CCC 1px 0 10px;
+}
+
+.box-shadow {
+	box-shadow: 5px 5px 10px @darkgray;
+	transition: box-shadow 0.2s ease;
+	&:hover {
+		box-shadow: 5px 10px 10px lighten(@darkgray, 10%);
+	}
+}
+
+.text-large {
+	font-size: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 70px;
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+img.center-image {
+  width: 80%;
+}
+
+/** COLUMNS */
+
+main {
+  padding-top: 100px;
+}
+
+main .row {
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 300px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  background-color: @lightgray;
+  // transition: background-color 0.5s ease;
+  // &:hover {
+  // 	background-color: lighten(@darkgray, 30%);
+  // }
+}
+
+
+/** portfolio section **/
+
+.portfolio-description {
+  height: 100px;
+  padding: 10px;
+  border: 1px solid @lightgray;
+  margin-bottom: 20px;
+}
+
+/** about section **/
+
+.about {
+  color: @darkgray;
+  margin-top: 60px;
+}
+
+.placeholder-medium {
+  width: 700px;
+  height: 300px;
+  background-color: @lightgray;
+  border: 1px solid @darkgray;
+  margin: 0 auto;
+}
+
+
+.battery {
+  margin: 0 auto;
+  padding: 30px;
+  width: 50%;
+}
+.fa {
+  font-size: 800%;
+  color: @darkgray;
+  text-align: center;
+  display: block;
+}
+
+.cozy-paragraph {
+  font-size: 1.3em;
+  padding: 10%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+
+// blockquote style from: https://css-tricks.com/examples/Blockquotes/
+blockquote {
+  font: 2em normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+} 
+

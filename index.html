@@ -1,26 +1,115 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Dana Ng</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="./css/styles.css" rel="stylesheet">
+    <title>Dana Ng</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
 </head>
+
 <body>
-
-
-<div id="card">
-  <div class="header">
-  <h1>Hello I'm Dana Ng</h1>
-  <p>I'm a web developer, minimalist, hiker, foodie, and traveler.Currently redesigning this website. Connect with me to see what I'm currently doing.</p>
-  <div class="social-media">
-  	<a href="https://twitter.com/ravingdango"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  	<a href="https://angel.co/ravingdango"><i class="fa fa-angellist" aria-hidden="true"></i></a>
-  	<a href="https://github.com/riceball1"><i class="fa fa-github" aria-hidden="true"></i></a>
-  </div>
-  </div>
-</div>
-
+    <!-- collapsible nav bar with hamburger menu -->
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#about">about</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="title">a minimalist in a tech world</h1>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-12">
+                <div class="battery">
+                    <span id="charging" class="fa"></span>
+                </div>
+                <p class="text-large">
+                    Hi, my name is Dana Ng.
+                    <br> I'm a full-stack web developer who designs
+                    <br> beautiful, clean and functional web applications.
+                </p>
+            </div>
+        </div>
+        <div class="row" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="col-6">
+                <a href="https://github.com/riceball1/multilingual-twitter">
+                    <div class="box-shadow">
+                        <div class="box">
+                            <i class="fa fa-twitter fa-6" aria-hidden="true"></i>
+                        </div>
+                        <div class="portfolio-description">Multilingual Twitter:
+                            <br> I used Yandex and Twitter API to create a mashed up twitter app that allows users to translate tweets. </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <div class="box-shadow">
+                    <div class="box"></div>
+                    <div class="portfolio-description">Coming Soon </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box-shadow">
+                    <div class="box"></div>
+                    <div class="portfolio-description">Coming Soon </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box-shadow">
+                    <div class="box"></div>
+                    <div class="portfolio-description">Coming Soon </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of portfolio section -->
+        <!-- div to block space -->
+        <div class="row">
+            <div class="col-12">
+            </div>
+        </div>
+        <div class="row" id="about">
+            <div class="col-12">
+                <div class="about">
+                    <h2>About</h2>
+                    <blockquote>
+                        "I like to die on Mars, just not on impact" <cite>- Elon Musk</cite>
+                    </blockquote>
+                    <p class="cozy-paragraph">
+                    Born and raised in Kentucky to Chinese immigrant parents. I lived in Ohio, Missouri, and Arizona before settling down in Northern California. I code because I love learning and applying my new knowledge to building amazing web apps. I love living a minimalist lifestyle and creating as little waste as possible. I believe that material goods only weigh you down, but good experiences can last a lifetime. I am an aspiring polygot and world traveler. So far, some of the countries I have traveled to include Japan, China, South Korea, Turkey, Iraq, Germany and more. Not only am I an avid traveler and love going hiking outdoors,  but I also enjoy making, eating and taking pictures of delicious foods.
+                    </p>
+                </div>
+            </div>
+            <h3 class="text-large">&olcir; &olcir; &olcir;</h3>
+        </div>
+    </main>
+    <footer>Copyright &copy; 2017
+        <br> &lt;&bsol;&gt; with &hearts; by Dana Ng</footer>
+    <script>
+    // chargebattery code from w3schools.com
+    function chargebattery() {
+        var a;
+        a = document.getElementById("charging");
+        a.innerHTML = "&#xf244;";
+        setTimeout(function() {
+            a.innerHTML = "&#xf243;";
+        }, 1000);
+        setTimeout(function() {
+            a.innerHTML = "&#xf242;";
+        }, 2000);
+        setTimeout(function() {
+            a.innerHTML = "&#xf241;";
+        }, 3000);
+        setTimeout(function() {
+            a.innerHTML = "&#xf240;";
+        }, 4000);
+    }
+    chargebattery();
+    setInterval(chargebattery, 5000);
+    </script>
 </body>
+
 </html>
