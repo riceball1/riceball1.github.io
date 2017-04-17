@@ -20,6 +20,7 @@ body {
   margin-top: 80px;
 	margin-bottom: 100px;
   font-family: 'Open Sans', sans-serif;
+  background-color: @lightgray;
 }
 
 /** fixed height footer **/
@@ -46,7 +47,8 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    border-bottom: 1px dotted @lightgray;
+    // box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     ul {
       list-style-type: none;
     }
@@ -58,7 +60,7 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
     &:hover {
-      color: @lightpink;
+      color: @darkteal;
     }
   }
 }
@@ -67,15 +69,18 @@ nav {
 /** HEADER **/
 
 header {
-	text-align: center;
+	text-align: left;
+  margin: 5% auto;
+  line-height: 4em;
+  max-width: 80%;
   .title {
-    margin-top: 100px;
+    // margin-top: 100px;
   }
 	h1 {
     font-family: 'Patua One', cursive;
     font-size: 3em;
     letter-spacing: 5px;
-    padding: 10px;
+    // margin: 0;
 	}
 }
 
@@ -88,10 +93,10 @@ header {
 }
 
 .box-shadow {
-	box-shadow: 5px 5px 10px @darkgray;
+	box-shadow: 5px 5px 10px @lightgray;
 	transition: box-shadow 0.2s ease;
 	&:hover {
-		box-shadow: 5px 10px 10px lighten(@darkgray, 10%);
+		box-shadow: 5px 10px 10px @darkgray;
 	}
 }
 
@@ -142,11 +147,36 @@ img.center-image {
   height: 200px;
   text-align: center;
   padding-top: 30px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+  // margin-right: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  margin: 5px;
   border-radius: 2px;
   background-color: @lightgray;
 }
 
+.pink {
+  color: @darkteal;
+}
+.connection {
+  max-width: 80%;
+  margin: 5% auto;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2em;
+  padding: 10px;
+  border: 1px solid @lightgray;
+  a {
+    color: @darkteal;
+    bottom-border: 1px dotted @darkteal;
+    font-weight: bold;
+    &:hover {
+      color: @darkgray;
+      bottom-border: 1px dotted @darkgray;
+    }
+  }
+}
 
 /** portfolio section **/
 
@@ -159,10 +189,10 @@ img.center-image {
 
 /** about section **/
 
-.about {
-  color: @darkgray;
-  margin-top: 60px;
-}
+// .about {
+//   color: @darkgray;
+//   margin-top: 60px;
+// }
 
 // .placeholder-medium {
 //   width: 700px;
@@ -172,43 +202,61 @@ img.center-image {
 //   margin: 0 auto;
 // }
 
-.fa {
-  font-size: 6em;
-  color: @coral;  
-  text-align: center;
-  display: block;
-}
+// .fa {
+//   font-size: 6em;
+//   color: @coral;  
+//   text-align: center;
+//   display: block;
+// }
 
-.cozy-paragraph {
-  font-size: 1.3em;
-  padding: 5% 10%;
-  margin: 0 auto;
-  line-height: 300%;
-  text-align: justify;
-}
+// .cozy-paragraph {
+//   font-size: 1.3em;
+//   // padding: 5% 10%;
+//   margin: 5% auto;
+//   line-height: 300%;
+//   text-align: justify;
+// }
 
-.intro-text {
-  background-color: @lightgray;
-  opacity: 0.5;
-  width: 80%;
-  margin: 0 auto;
-  color: @black;
-  padding: 5%;
-  font-size: 1.5em;
-  text-align: center;
-  line-height: 300%;
-}
+// .intro-text {
+//   background-color: @lightgray;
+//   opacity: 0.5;
+//   width: 80%;
+//   margin: 0 auto;
+//   color: @black;
+//   padding: 5%;
+//   font-size: 1.5em;
+//   text-align: center;
+//   line-height: 300%;
+// }
 
 
 // blockquote style from: https://css-tricks.com/examples/Blockquotes/
-blockquote {
-  font: 2em normal helvetica, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  padding-left: 15px;
-  border-left: 3px solid #ccc;
-  word-spacing: 5px;
-  color: black;
-} 
+// blockquote {
+//   font: 2em normal helvetica, sans-serif;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+//   margin-left: 50px;
+//   padding-left: 15px;
+//   border-left: 3px solid #ccc;
+//   word-spacing: 5px;
+//   color: black;
+// } 
 
+@media screen and (max-width: 800px) {
+  header {
+    text-align: center;
+    // margin: 0px;
+    // h1 {
+    //   font-size: 2em;
+    //   line-height: 2em;
+
+    // }
+  }
+  .connection {
+    text-align: justify;
+    // background-color: black;
+    border: none;
+    
+  }
+
+}
