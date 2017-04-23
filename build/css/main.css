@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+* {
+  box-sizing: border-box;
+}
+/* Grid measurements:
+ *
+ *   960px wide including 12 gutters (half gutters on both edges)
+ *
+ *   60px columns (12)
+ *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
+ *
+ *
+ *   For smaller screens, we always want 20px of padding on either side,
+ *   so 960 + 20 + 20 => 1000px
+ *
+ **/
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+.row::after {
+  clear: both;
+}
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+  float: left;
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+/* Mobile defaults */
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+  width: 100%;
+}
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
+  /* 4 columns */
+  .col-4 {
+    width: 33.3%;
+  }
+  /* 6 columns */
+  .col-6 {
+    width: 50%;
+  }
+  /* 12 columns */
+  .col-12 {
+    width: 100%;
+  }
+}
+/** grid.less and normalize.css helps to set the foundation for the customed styles**/
+/** GENERAL **/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/** HEADER **/
+header {
+  margin: 10px auto;
+  width: 80%;
+}
+header h1.title {
+  font-family: 'Patua One', sans-serif;
+  font-size: 3em;
+}
+header h2 {
+  font-size: 2em;
+  font-family: 'Patua One', sans-serif;
+  color: #004141;
+}
+/** MAIN BODY **/
+main {
+  padding: 5%;
+}
+.paragraph {
+  margin: 10px auto;
+  font-size: 1.2em;
+  line-height: 30px;
+  text-align: justify;
+  width: 80%;
+}
+.quote {
+  margin: 10px auto;
+  width: 80%;
+  color: #555;
+}
+.quote p {
+  font-size: 1.5em;
+}
+.quote p.cite {
+  font-size: .8em;
+}
+#about {
+  margin-top: 30px;
+}
+/** fixed height footer **/
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  background-color: #004141;
+  color: #FFF;
+  border-top: 1px solid #f1f1f1;
+  text-align: center;
+}
+/** MEDIA QUERIES **/
+@media screen and (max-width: 799px) {
+  .quote {
+    font-size: .8em;
+    text-align: center;
+  }
+  header h1,
+  header h2 {
+    text-align: center;
+  }
+  header h2 {
+    font-size: 1.5em;
+  }
+}

@@ -1,63 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dana Ng</title>
-    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./lib/normalize.css" rel="stylesheet">
     <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+    <link href="./build/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar -->
-    <!-- <nav>
-        <ul>
-            <li><a href="#">&hearts;</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="http://danafng.blogspot.com/">blog</a></li>
-        </ul>
-    </nav> -->
-
     <!-- header -->
-    
     <main>
-       
         <header>
-            <h1 class="title">Hi, I'm Dana Ng, a minimalist and web developer in the Bay Area.
-            <span class="pink">I'm currently building amazing apps to better our world.</span> </h1>
+            <h1 class="title">Hi, I'm Dana Ng!</h1>
+            <h2>A minimalist and web developer in the Bay Area.</h2>
         </header>
+        <div class="quote">
+            <p> Smile, breathe and go slowly. </p>
+            <p class="cite">Thich Nhat Hanh</p>
+        </div>
 
-        <div class="connection">
-        You can see my projects on <a href="https://github.com/riceball1">Github</a>, follow my random tech and zero waste posts on my <a href="http://danafng.blogspot.com/">Blog</a>, and catch up with my food + travel adventures on <a href="https://www.instagram.com/riceball1/">Instagram</a>.
-        </div>
-       
-        </div>
+        <section id="about">
+            <div class="paragraph">
+                You can see my projects on <a href="https://github.com/riceball1">Github</a>, follow my random tech and zero waste posts on my <a href="http://danafng.blogspot.com/">Blog</a>, and catch up with my food + travel adventures on <a href="https://www.instagram.com/riceball1/">Instagram</a>.
+            </div>
+        </section>
     </main>
     <footer>Copyright &copy; 2017
         <br> &lt;&bsol;&gt; with &hearts; by Dana Ng</footer>
-    <script>
-    // chargebattery code from w3schools.com
-    // function chargebattery() {
-    //     var a;
-    //     a = document.getElementById("charging");
-    //     a.innerHTML = "&#xf244;";
-    //     setTimeout(function() {
-    //         a.innerHTML = "&#xf243;";
-    //     }, 1000);
-    //     setTimeout(function() {
-    //         a.innerHTML = "&#xf242;";
-    //     }, 2000);
-    //     setTimeout(function() {
-    //         a.innerHTML = "&#xf241;";
-    //     }, 3000);
-    //     setTimeout(function() {
-    //         a.innerHTML = "&#xf240;";
-    //     }, 4000);
-    // }
-    // chargebattery();
-    // setInterval(chargebattery, 5000);
-    </script>
+    <script src="./build/js/main.js"></script>
 </body>
 
 </html>

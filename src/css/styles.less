@@ -1,0 +1,97 @@
+
+/** grid.less and normalize.css helps to set the foundation for the customed styles**/
+
+/** GENERAL **/
+* {
+  box-sizing: border-box;
+}
+
+body {
+	// margin-bottom: 100px;
+  font-family: 'Open Sans', sans-serif;
+  // background-color: @lightgray;
+}
+
+/** HEADER **/
+
+header {
+  margin: 10px auto;
+  width: 80%;
+  h1.title {
+    font-family: 'Patua One', sans-serif;
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+    font-family: 'Patua One', sans-serif;
+    color: @darkteal;
+  }
+}
+
+
+/** MAIN BODY **/
+
+main {
+  padding: 5%;
+}
+
+.paragraph {
+  margin: 10px auto;
+  font-size: 1.2em;
+  line-height: 30px;
+  text-align: justify;
+  width: 80%;
+}
+
+.quote {
+  margin: 10px auto;
+  width: 80%;
+  color: @darkgray;
+  p {
+    font-size: 1.5em;
+  }
+  p.cite {
+    font-size: .8em;
+  }
+}
+
+#about {
+  margin-top: 30px;
+}
+
+
+
+/** fixed height footer **/
+footer {
+	position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  background-color: @darkteal;
+  color: @white;
+  border-top: 1px solid @lightgray;
+  text-align: center;
+}
+
+
+/** MEDIA QUERIES **/
+
+
+@media screen and (max-width: 799px) {
+  .quote {
+    font-size: .8em;
+    text-align: center;
+  }
+
+  header {
+    h1, h2 {
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}
+
