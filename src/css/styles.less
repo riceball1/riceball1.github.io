@@ -64,6 +64,8 @@ main {
   margin: 60px auto;
   width: 80%;
   color: @darkgray;
+  background-color: lighten(@lightgray, 3%);
+  padding: 20px 10px;
   p {
     font-size: 1.5em;
   }
@@ -71,6 +73,18 @@ main {
     font-size: .8em;
   }
 }
+
+.paragraph {
+  width: 80%;
+  border-left: 10px solid @darkgray;
+  padding-left: 10px;
+  line-height: 30px;
+  color: @darkgray;
+  font-size: 1em;
+  margin: 5% auto;
+  text-align: left;
+}
+
 
 #about {
   margin-top: 80px;
@@ -80,7 +94,7 @@ main {
 
 /** fixed height footer **/
 footer {
-	position: absolute;
+	position: fixed;
   left: 0;
   bottom: 0;
   height: 60px;
@@ -114,6 +128,9 @@ footer {
     h2 {
       font-size: 1.5em;
     }
+  }
+  .paragraph {
+    width: 80%;
   }
 }
 

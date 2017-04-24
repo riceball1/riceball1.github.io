@@ -127,6 +127,8 @@ main {
   margin: 60px auto;
   width: 80%;
   color: #555;
+  background-color: #f9f9f9;
+  padding: 20px 10px;
 }
 .quote p {
   font-size: 1.5em;
@@ -134,12 +136,22 @@ main {
 .quote p.cite {
   font-size: .8em;
 }
+.paragraph {
+  width: 80%;
+  border-left: 10px solid #555;
+  padding-left: 10px;
+  line-height: 30px;
+  color: #555;
+  font-size: 1em;
+  margin: 5% auto;
+  text-align: left;
+}
 #about {
   margin-top: 80px;
 }
 /** fixed height footer **/
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   height: 60px;
@@ -168,5 +180,8 @@ footer {
   }
   header h2 {
     font-size: 1.5em;
+  }
+  .paragraph {
+    width: 80%;
   }
 }
