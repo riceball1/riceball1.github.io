@@ -7,9 +7,22 @@
 }
 
 body {
-	// margin-bottom: 100px;
+	margin-bottom: 100px;
   font-family: 'Open Sans', sans-serif;
-  // background-color: @lightgray;
+  a {
+    color: @maincolor;
+    text-decoration: none;
+    font-weight: bold;
+    span {
+      border-bottom: 2px dotted @maincolor;
+    }
+    &:hover {
+      color: @darkteal;
+      span {
+        border-bottom: none;
+      }
+    }
+  }
 }
 
 /** HEADER **/
@@ -17,14 +30,18 @@ body {
 header {
   margin: 10px auto;
   width: 80%;
+  h1, h2 {
+    margin: 3px;
+  }
   h1.title {
     font-family: 'Patua One', sans-serif;
     font-size: 3em;
+    color: @darkgray;
   }
   h2 {
     font-size: 2em;
-    font-family: 'Patua One', sans-serif;
-    color: @darkteal;
+    // font-family: 'Patua One', sans-serif;
+    color: @maincolor;
   }
 }
 
@@ -35,16 +52,16 @@ main {
   padding: 5%;
 }
 
-.paragraph {
+.social-media {
+  color: @darkgray;
   margin: 10px auto;
   font-size: 1.2em;
   line-height: 30px;
-  text-align: justify;
   width: 80%;
 }
 
 .quote {
-  margin: 10px auto;
+  margin: 60px auto;
   width: 80%;
   color: @darkgray;
   p {
@@ -56,7 +73,7 @@ main {
 }
 
 #about {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 
@@ -69,7 +86,7 @@ footer {
   height: 60px;
   width: 100%;
   padding: 10px;
-  background-color: @darkteal;
+  background-color: @maincolor;
   color: @white;
   border-top: 1px solid @lightgray;
   text-align: center;
@@ -84,10 +101,15 @@ footer {
     font-size: .8em;
     text-align: center;
   }
-
+  .social-media {
+    text-align: center;
+  }
   header {
     h1, h2 {
       text-align: center;
+    }
+    h1.title {
+      font-size: 2.5em;
     }
     h2 {
       font-size: 1.5em;

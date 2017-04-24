@@ -77,35 +77,54 @@
   box-sizing: border-box;
 }
 body {
+  margin-bottom: 100px;
   font-family: 'Open Sans', sans-serif;
+}
+body a {
+  color: #8FBC8B;
+  text-decoration: none;
+  font-weight: bold;
+}
+body a span {
+  border-bottom: 2px dotted #8FBC8B;
+}
+body a:hover {
+  color: #004141;
+}
+body a:hover span {
+  border-bottom: none;
 }
 /** HEADER **/
 header {
   margin: 10px auto;
   width: 80%;
 }
+header h1,
+header h2 {
+  margin: 3px;
+}
 header h1.title {
   font-family: 'Patua One', sans-serif;
   font-size: 3em;
+  color: #555;
 }
 header h2 {
   font-size: 2em;
-  font-family: 'Patua One', sans-serif;
-  color: #004141;
+  color: #8FBC8B;
 }
 /** MAIN BODY **/
 main {
   padding: 5%;
 }
-.paragraph {
+.social-media {
+  color: #555;
   margin: 10px auto;
   font-size: 1.2em;
   line-height: 30px;
-  text-align: justify;
   width: 80%;
 }
 .quote {
-  margin: 10px auto;
+  margin: 60px auto;
   width: 80%;
   color: #555;
 }
@@ -116,7 +135,7 @@ main {
   font-size: .8em;
 }
 #about {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 /** fixed height footer **/
 footer {
@@ -126,7 +145,7 @@ footer {
   height: 60px;
   width: 100%;
   padding: 10px;
-  background-color: #004141;
+  background-color: #8FBC8B;
   color: #FFF;
   border-top: 1px solid #f1f1f1;
   text-align: center;
@@ -137,9 +156,15 @@ footer {
     font-size: .8em;
     text-align: center;
   }
+  .social-media {
+    text-align: center;
+  }
   header h1,
   header h2 {
     text-align: center;
+  }
+  header h1.title {
+    font-size: 2.5em;
   }
   header h2 {
     font-size: 1.5em;
