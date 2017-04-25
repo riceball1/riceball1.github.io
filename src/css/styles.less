@@ -28,8 +28,9 @@ body {
 /** HEADER **/
 
 header {
-  margin: 10px auto;
+  margin: 25% auto 0px auto;
   width: 80%;
+
   h1, h2 {
     margin: 3px;
   }
@@ -61,11 +62,10 @@ main {
 }
 
 .quote {
-  margin: 60px auto;
+  margin: 10px auto;
   width: 80%;
   color: @darkgray;
-  background-color: lighten(@lightgray, 3%);
-  padding: 20px 10px;
+  // padding: 20px 10px;
   p {
     font-size: 1.5em;
   }
@@ -85,12 +85,29 @@ main {
   text-align: left;
 }
 
-
-#about {
-  margin-top: 80px;
+#personal {
+  margin-top: 10%;
 }
 
+.btn {
+  margin: 5% auto;
+  text-align: left;
+  width: 80%;
+}
 
+.scroll-btn {
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: @maincolor;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: @darkgray;
+  }
+}
 
 /** fixed height footer **/
 footer {
@@ -108,7 +125,11 @@ footer {
 
 
 /** MEDIA QUERIES **/
-
+@media screen and (max-width: 1100px) {
+   #personal {
+    margin-top: 90%;
+  }
+}
 
 @media screen and (max-width: 799px) {
   .quote {
@@ -132,5 +153,9 @@ footer {
   .paragraph {
     width: 80%;
   }
+  .btn {
+    text-align: center;
+  }
+ 
 }
 

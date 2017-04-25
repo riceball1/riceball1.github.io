@@ -96,7 +96,7 @@ body a:hover span {
 }
 /** HEADER **/
 header {
-  margin: 10px auto;
+  margin: 25% auto 0px auto;
   width: 80%;
 }
 header h1,
@@ -124,11 +124,9 @@ main {
   width: 80%;
 }
 .quote {
-  margin: 60px auto;
+  margin: 10px auto;
   width: 80%;
   color: #555;
-  background-color: #f9f9f9;
-  padding: 20px 10px;
 }
 .quote p {
   font-size: 1.5em;
@@ -146,8 +144,26 @@ main {
   margin: 5% auto;
   text-align: left;
 }
-#about {
-  margin-top: 80px;
+#personal {
+  margin-top: 10%;
+}
+.btn {
+  margin: 5% auto;
+  text-align: left;
+  width: 80%;
+}
+.scroll-btn {
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #8FBC8B;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.scroll-btn:hover {
+  color: white;
+  background-color: #555;
 }
 /** fixed height footer **/
 footer {
@@ -163,6 +179,11 @@ footer {
   text-align: center;
 }
 /** MEDIA QUERIES **/
+@media screen and (max-width: 1100px) {
+  #personal {
+    margin-top: 90%;
+  }
+}
 @media screen and (max-width: 799px) {
   .quote {
     font-size: .8em;
@@ -183,5 +204,8 @@ footer {
   }
   .paragraph {
     width: 80%;
+  }
+  .btn {
+    text-align: center;
   }
 }
