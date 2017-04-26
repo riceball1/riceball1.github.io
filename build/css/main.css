@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
 * {
   box-sizing: border-box;
 }
@@ -105,7 +105,7 @@ header h2 {
   margin: 3px;
 }
 header h1.title {
-  font-family: 'Patua One', sans-serif;
+  font-family: 'Sanchez', serif;
   font-size: 3em;
   color: #555;
 }
@@ -147,6 +147,9 @@ main {
 #personal {
   margin-top: 15%;
 }
+button {
+  font-family: 'Open Sans', sans-serif;
+}
 .btn {
   margin: 5% auto;
   text-align: left;
@@ -160,6 +163,7 @@ main {
   border: none;
   margin: 0 auto;
   cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
 }
 .scroll-btn:hover {
   color: white;
