@@ -180,7 +180,13 @@ button {
   width: 50%;
   height: auto;
   margin: 0 auto;
-  border: 1px dotted #555;
+  filter: grayscale(100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-img:hover {
+  box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  filter: grayscale(0%);
+  transition-duration: 0.4s;
 }
 h4 {
   color: #8FBC8B;
@@ -203,6 +209,7 @@ h4 {
 .project-btn:hover {
   background-color: #555;
   color: #ff6a6a;
+  transition-duration: 0.4s;
 }
 /** fixed height footer **/
 footer {

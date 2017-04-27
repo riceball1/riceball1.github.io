@@ -126,7 +126,13 @@ button {
   width: 50%;
   height: auto;
   margin: 0 auto;
-  border: 1px dotted @darkgray;
+  filter: grayscale(100%);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+&:hover{
+  box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: grayscale(0%);
+    transition-duration: 0.4s;
+  }
 }
 
 h4 {
@@ -151,6 +157,7 @@ h4 {
   &:hover {
     background-color: @darkgray;
     color: @coral;
+    transition-duration: 0.4s;
   }
 }
 
