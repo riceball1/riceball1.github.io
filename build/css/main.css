@@ -82,12 +82,12 @@ body {
   background-color: #f1f1f1;
 }
 body a {
-  color: #8FBC8B;
+  color: #04C1AD;
   text-decoration: none;
   font-weight: bold;
 }
 body a span {
-  border-bottom: 2px dotted #8FBC8B;
+  border-bottom: 2px dotted #04C1AD;
 }
 body a:hover {
   color: #004141;
@@ -111,7 +111,7 @@ header h1.title {
 }
 header h2 {
   font-size: 2em;
-  color: #8FBC8B;
+  color: #04C1AD;
 }
 /** MAIN BODY **/
 main {
@@ -136,7 +136,7 @@ main {
   font-size: .8em;
 }
 .paragraph {
-  width: 80%;
+  width: 100%;
   padding-left: 10px;
   line-height: 30px;
   color: #555;
@@ -144,8 +144,9 @@ main {
   margin: 5% auto;
   text-align: left;
 }
-#personal {
+.personal {
   margin-top: 15%;
+  margin-bottom: 15%;
 }
 button {
   font-family: 'Open Sans', sans-serif;
@@ -159,7 +160,7 @@ button {
   padding: 10px;
   font-size: 1.2em;
   text-align: center;
-  background-color: #8FBC8B;
+  background-color: #04C1AD;
   border: none;
   margin: 0 auto;
   cursor: pointer;
@@ -169,11 +170,11 @@ button {
   color: white;
   background-color: #555;
 }
-.col-12 {
-  border: 1px dotted #555;
+.project {
   margin-bottom: 5%;
   padding: 5%;
   background-color: white;
+  line-height: 2em;
 }
 .project-img {
   display: block;
@@ -189,16 +190,16 @@ button {
   transition-duration: 0.4s;
 }
 h4 {
-  color: #8FBC8B;
+  color: #04C1AD;
   text-transform: uppercase;
 }
 .keywords {
   font-size: .8em;
   text-transform: uppercase;
-  color: #8FBC8B;
+  color: #04C1AD;
 }
 .project-btn {
-  background-color: #8FBC8B;
+  background-color: #04C1AD;
   border: none;
   padding: 2%;
   width: 25%;
@@ -211,6 +212,18 @@ h4 {
   color: #ff6a6a;
   transition-duration: 0.4s;
 }
+.about-paragraph {
+  @extend .paragraph;
+  padding: 10% 5%;
+  text-align: justify;
+  line-height: 2.5em;
+  width: 100%;
+  background-color: white;
+}
+#about {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /** fixed height footer **/
 footer {
   position: fixed;
@@ -219,14 +232,14 @@ footer {
   height: 60px;
   width: 100%;
   padding: 10px;
-  background-color: #8FBC8B;
+  background-color: #04C1AD;
   color: #FFF;
   border-top: 1px solid #f1f1f1;
   text-align: center;
 }
 /** MEDIA QUERIES **/
 @media screen and (max-width: 1100px) {
-  #personal {
+  .personal {
     margin-top: 90%;
   }
 }

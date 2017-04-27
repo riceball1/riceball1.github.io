@@ -66,7 +66,6 @@ main {
   margin: 10px auto;
   width: 80%;
   color: @darkgray;
-  // padding: 20px 10px;
   p {
     font-size: 1.5em;
   }
@@ -76,8 +75,7 @@ main {
 }
 
 .paragraph {
-  width: 80%;
-  // border-left: 10px solid @darkgray;
+  width: 100%;
   padding-left: 10px;
   line-height: 30px;
   color: @darkgray;
@@ -86,8 +84,9 @@ main {
   text-align: left;
 }
 
-#personal {
+.personal {
   margin-top: 15%;
+  margin-bottom: 15%;
 }
 button {
   font-family: 'Open Sans', sans-serif;
@@ -114,11 +113,11 @@ button {
   }
 }
 
-.col-12 {
-  border: 1px dotted @darkgray;
+.project {
   margin-bottom: 5%;
   padding: 5%;
   background-color: white;
+  line-height: 2em;
 }
 
 .project-img {
@@ -161,6 +160,20 @@ h4 {
   }
 }
 
+.about-paragraph {
+  @extend .paragraph;
+  padding: 10% 5%;
+  text-align: justify;
+  line-height: 2.5em;
+  width: 100%;
+  background-color: white;
+}
+
+#about {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /** fixed height footer **/
 footer {
 	position: fixed;
@@ -178,7 +191,7 @@ footer {
 
 /** MEDIA QUERIES **/
 @media screen and (max-width: 1100px) {
-   #personal {
+   .personal {
     margin-top: 90%;
   }
 }
