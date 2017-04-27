@@ -169,6 +169,41 @@ button {
   color: white;
   background-color: #555;
 }
+.col-12 {
+  border: 1px dotted #555;
+  margin-bottom: 5%;
+  padding: 5%;
+  background-color: white;
+}
+.project-img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px dotted #555;
+}
+h4 {
+  color: #8FBC8B;
+  text-transform: uppercase;
+}
+.keywords {
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #8FBC8B;
+}
+.project-btn {
+  background-color: #8FBC8B;
+  border: none;
+  padding: 2%;
+  width: 25%;
+  border-radius: 3px;
+  margin: 3px;
+  cursor: pointer;
+}
+.project-btn:hover {
+  background-color: #555;
+  color: #ff6a6a;
+}
 /** fixed height footer **/
 footer {
   position: fixed;
