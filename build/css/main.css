@@ -125,15 +125,19 @@ main {
   width: 80%;
 }
 .quote {
-  margin: 10px auto;
-  width: 80%;
   color: #555;
+  margin: 5% 0;
 }
 .quote p {
   font-size: 1.5em;
 }
 .quote p.cite {
   font-size: .8em;
+}
+.main-btn {
+  @extends .btn;
+  width: 100%;
+  margin: 10px 0;
 }
 .paragraph {
   width: 100%;
