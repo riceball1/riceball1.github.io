@@ -12,15 +12,30 @@
 </head>
 
 <body>
+    <!-- nav -->
+    <nav>
+        <ul>
+            <li class="brand"><a href="#">DN &hearts;</a></li>
+            <li><a href="#links">connect</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#about">about</a></li>
+        </ul>
+    </nav>
+
+
     <!-- header -->
     <main id="top">
         <header>
-            <h1 class="title">Hi, I'm Dana Ng!</h1>
-            <h2>minimalist + web developer</h2>
-            <div class="main-btn">
-                <a href="#about">
-                    <button class="scroll-btn">Learn More</button>
-                </a>
+            <div class="front-message">
+                <h1 class="title">Hi, I'm Dana Ng!</h1>
+                <h2>minimalist + web developer</h2>
+                <div class="main-btn">
+                    <a href="#about">
+                        <button class="scroll-btn">Learn More</button>
+                    </a>
+                </div>
+            </div>
+            <div class="fa fa-code">
             </div>
             <div class="quote">
                 <p> Smile, breathe and go slowly. </p>
@@ -31,9 +46,9 @@
             <div class="about" id="about">
                 <div class="about-paragraph">
                     <h3>About Dana Ng</h3>
-                    <p>Welcome to my portfolio website. My name is Dana Ng, and I'm based in San Jose, CA. I'm a web developer, who loves to build clean, efficent applications on the web and mobile. Currently, I work with JavaScript, but dabbling with Python
+                    <p>Welcome to my portfolio website. My name is Dana Ng, and I'm based in San Jose, CA. I'm a web developer who loves to build clean, efficent applications on the web and mobile. Currently, I work with JavaScript, but dabbling with Python
                         and C.</p>
-                    <p>Besides learning more about programming, I'm also an aspiring polygot, studying to speak 5 languages fluently. I like staying active outdoors by traveling, hiking and playing soccer. In addition, I'm a foodie and amateur chef. I hope
+                    <p>Besides learning more about programming, I'm also an aspiring polyglot, studying to speak 5 languages fluently. I like staying active outdoors by traveling, hiking and playing soccer. In addition, I'm a foodie and amateur chef. I hope
                         to combine my interests in living a minimalist and sustainable lifestyle with my work. Feel free to connect with me.</p>
                 </div>
             </div>
@@ -48,52 +63,54 @@
                 <div class="row">
                     <h3>Projects</h3>
                     <div class="col-12 project">
-                        <h4>Multilingual Twitter</h4>
-                        <a href="https://github.com/riceball1/multilingual-twitter"><img src="./public/multilingual.png" class="project-img"></a>
-                        <p>An application that uses Twitter API and Yandex API to query for tweets, and translate the tweets into another language, retweet in new language and view original tweets.</p>
-                        <p class="keywords">javascript, heroku, node/express, jquery, yandex api, twitter api</p>
+                        <h4>Simple Code</h4>
+                        <a href="https://github.com/riceball1/simple-code" target="_blank"><img src="./public/simple-code.png" class="project-img"></a>
+                        <p>A place to store, search, and aggregate all your coding snippets into your own library.</p>
+                        <p class="keywords">javascript, heroku, react, redux node/express, jwt token, mongodb/mongoose, react-codemirror</p>
                         <p>
-                            <a href="https://github.com/riceball1/multilingual-twitter">
+                            <a href="https://github.com/riceball1/simple-code" target="_blank">
                                 <button class="project-btn">repo</button>
                             </a>
-                            <a href="https://multilingual-twitter.herokuapp.com/">
+                            <a href="https://simple-code-app.herokuapp.com/" target="_blank">
                                 <button class="project-btn">demo</button>
                             </a>
                         </p>
                     </div>
                     <div class="col-12 project">
                         <h4>Multipurpose</h4>
-                        <a href="https://github.com/riceball1/multipurpose-node"><img src="./public/multipurpose.png" class="project-img"></a>
+                        <a href="https://github.com/riceball1/multipurpose-node" target="_blank"><img src="./public/multipurpose.png" class="project-img"></a>
                         <p>An app that allows users to look up information on how to find multipurpose uses for non-toxic, common household items.</p>
                         <p class="keywords">javascript, heroku, mocha/chai, node/express, passportjs, handlebars, bootstrap, mongodb/mongoose</p>
                         <p>
-                            <a href="https://github.com/riceball1/multipurpose-node">
+                            <a href="https://github.com/riceball1/multipurpose-node" target="_blank">
                                 <button class="project-btn">repo</button>
                             </a>
-                            <a href="https://infinite-ocean-13160.herokuapp.com/">
+                            <a href="https://infinite-ocean-13160.herokuapp.com/" target="_blank">
                                 <button class="project-btn">demo</button>
                             </a>
                         </p>
                     </div>
                     <div class="col-12 project">
-                        <h4>Simple Code</h4>
-                        <a href="https://github.com/riceball1/simple-code"><img src="./public/simple-code.png" class="project-img"></a>
-                        <p>A place to store, search, and aggregate all your coding snippets into your own library.</p>
-                        <p class="keywords">javascript, heroku, react, redux node/express, jwt token, mongodb/mongoose, react-codemirror</p>
+                        <h4>Multilingual Twitter</h4>
+                        <a href="https://github.com/riceball1/multilingual-twitter" target="_blank"><img src="./public/multilingual.png" class="project-img"></a>
+                        <p>An application that uses Twitter API and Yandex API to query for tweets, and translate the tweets into another language, retweet in new language and view original tweets.</p>
+                        <p class="keywords">javascript, heroku, node/express, jquery, yandex api, twitter api</p>
                         <p>
-                            <a href="https://github.com/riceball1/simple-code">
+                            <a href="https://github.com/riceball1/multilingual-twitter" target="_blank">
                                 <button class="project-btn">repo</button>
                             </a>
-                            <a href="https://simple-code-app.herokuapp.com/">
+                            <a href="https://multilingual-twitter.herokuapp.com/" target="_blank">
                                 <button class="project-btn">demo</button>
                             </a>
                         </p>
                     </div>
-                    <div class="col-12 project">
+
+
+                    <div class="col-12 project other-projects">
                         <h4>Other Projects</h4>
                         <p>The following are additional projects I have done in order to improve my programming skills</p>
                         <ul>
-                            <li><a href="http://www.danafng.com/freecodecamp/weather-app/index.html">freecode camp projects</a></li>
+                            <li><a href="http://www.danafng.com/freecodecamp/weather-app/index.html" target="_blank">freecode camp projects</a></li>
                             <li>Harvard CS50 - Introduction to Computer Science</li>
                             <li>Udacity Front End Developer Nanodegree</li>
                             <li>Udacity Full Stack Developer Nanodegree</li>
@@ -101,18 +118,14 @@
                     </div>
                 </div>
             </div>
-            <div class="social-media">
-                <a href="https://github.com/riceball1"><span>Github</span></a> &#8886;
-                <a href="http://danafng.blogspot.com/"><span>Blog</span></a> &#8886;
-                <a href="https://www.linkedin.com/in/danafng/"><span>Linkedin</span></a> &#8886;
+            <div class="social-media" id="links">
+                <a href="https://github.com/riceball1" target="_blank"><span>Github</span></a> &#8886;
+                <a href="http://danafng.blogspot.com/" target="_blank"><span>Blog</span></a> &#8886;
+                <a href="https://www.linkedin.com/in/danafng/" target="_blank"><span>Linkedin</span></a> &#8886;
                 <a href="https://drive.google.com/file/d/0BzS51-MEgTqCcDZYRkktQ1ozZFk/view?usp=sharing"><span>Resume</span></a>
             </div>
         </section>
-        <div class="btn">
-            <a href="#top">
-                <button class="scroll-btn">Back to Top</button>
-            </a>
-        </div>
+
     </main>
     <footer>Copyright &copy; 2017
         <br> &lt;&bsol;&gt; with &hearts; by Dana Ng</footer>

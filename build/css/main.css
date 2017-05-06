@@ -134,6 +134,29 @@ main {
 .quote p.cite {
   font-size: .8em;
 }
+.fa-code {
+  background-color: #04C1AD;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  z-index: -1;
+  text-align: center;
+  line-height: 100px;
+  font-size: 2em;
+  animation: bounce 1s infinite alternate;
+}
+/** bouncing thanks to this article: http://stackoverflow.com/questions/32306089/css-smooth-bounce-animation */
+@keyframes bounce {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
 .main-btn {
   @extends .btn;
   width: 100%;
@@ -243,6 +266,42 @@ footer {
   border-top: 1px solid #f1f1f1;
   text-align: center;
 }
+.other-projects {
+  text-align: left;
+}
+.other-projects h4 {
+  text-align: center;
+}
+nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #04C1AD;
+}
+nav ul .brand {
+  float: left;
+}
+nav ul .brand a {
+  font-size: 1.2em;
+}
+nav ul li {
+  float: right;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 /** MEDIA QUERIES **/
 @media screen and (max-width: 1100px) {
   .personal {
@@ -271,10 +330,19 @@ footer {
   header h2 {
     font-size: 1.5em;
   }
-  .paragraph {
-    width: 80%;
-  }
   .btn {
     text-align: center;
+  }
+  .project-img {
+    width: 80%;
+  }
+  .fa-code {
+    display: none;
+  }
+  .paragraph {
+    width: 100%;
+  }
+  .col-12 .project {
+    width: 100%;
   }
 }
