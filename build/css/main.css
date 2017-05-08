@@ -178,11 +178,6 @@ main {
 button {
   font-family: 'Open Sans', sans-serif;
 }
-.btn {
-  margin: 5% auto;
-  text-align: left;
-  width: 80%;
-}
 .scroll-btn {
   padding: 10px;
   font-size: 1.2em;
@@ -242,11 +237,12 @@ h4 {
 }
 .about-paragraph {
   @extend .paragraph;
-  padding: 10% 5%;
+  padding: 5% 5% 2% 5%;
   text-align: justify;
   line-height: 2.5em;
-  width: 100%;
+  width: 80%;
   background-color: white;
+  margin: 10px auto 0px auto;
 }
 .about {
   padding-left: 20px;
@@ -271,6 +267,9 @@ footer {
 }
 .other-projects h4 {
   text-align: center;
+}
+.check-btn {
+  margin: 10px auto;
 }
 nav {
   position: fixed;
@@ -306,6 +305,9 @@ nav ul li a {
 @media screen and (max-width: 1100px) {
   .personal {
     margin-top: 90%;
+  }
+  .about-paragraph {
+    width: 100%;
   }
 }
 @media screen and (max-width: 799px) {
