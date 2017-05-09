@@ -1,5 +1,0 @@
-D3.js - for manipulating documents based on data
-<script src="https://d3js.org/d3.v4.min.js"></script>
-
-vis.js - visualization library http://visjs.org/#download_install
-

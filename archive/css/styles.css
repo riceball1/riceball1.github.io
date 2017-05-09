@@ -1,3 +1,0 @@
-/* box shadowing */
-*{box-sizing:border-box}body{font-family:'Open Sans',sans-serif}body a{color:#fff}body a:hover{color:#ec7063}body .fa{font-size:2em;padding:5px}body #card{-webkit-box-shadow:13px 31px 39px -5px #827e82;-moz-box-shadow:13px 31px 39px -5px #827e82;box-shadow:13px 31px 39px -5px #827e82;width:80%;height:600px;padding:10px;text-align:center;height:20%;margin:50px auto;background-color:#6dc066;border-radius:5px}body #card .header{margin:0 auto;padding:10px}body #card .header p{width:80%;margin:10px auto;padding:5px;line-height:40px;letter-spacing:.5px}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
