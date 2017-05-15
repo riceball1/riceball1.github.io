@@ -82,12 +82,12 @@ body {
   background-color: #f1f1f1;
 }
 body a {
-  color: #04C1AD;
+  color: #20B2AA;
   text-decoration: none;
   font-weight: bold;
 }
 body a span {
-  border-bottom: 2px dotted #04C1AD;
+  border-bottom: 2px dotted #20B2AA;
 }
 body a:hover {
   color: #004141;
@@ -111,7 +111,7 @@ header h1.title {
 }
 header h2 {
   font-size: 2em;
-  color: #04C1AD;
+  color: #20B2AA;
 }
 /** MAIN BODY **/
 main {
@@ -135,7 +135,7 @@ main {
   font-size: .8em;
 }
 .fa-code {
-  background-color: #04C1AD;
+  background-color: #20B2AA;
   height: 100px;
   width: 100px;
   border-radius: 50px;
@@ -182,7 +182,7 @@ button {
   padding: 10px;
   font-size: 1.2em;
   text-align: center;
-  background-color: #04C1AD;
+  background-color: #20B2AA;
   border: none;
   margin: 0 auto;
   cursor: pointer;
@@ -213,16 +213,16 @@ button {
   transition-duration: 0.4s;
 }
 h4 {
-  color: #04C1AD;
+  color: #20B2AA;
   text-transform: uppercase;
 }
 .keywords {
   font-size: .8em;
   text-transform: uppercase;
-  color: #04C1AD;
+  color: #20B2AA;
 }
 .project-btn {
-  background-color: #04C1AD;
+  background-color: #20B2AA;
   border: none;
   padding: 2%;
   width: 25%;
@@ -232,7 +232,7 @@ h4 {
 }
 .project-btn:hover {
   background-color: #555;
-  color: #04C1AD;
+  color: #20B2AA;
   transition-duration: 0.4s;
 }
 .about {
@@ -246,7 +246,7 @@ footer {
   height: 60px;
   width: 100%;
   padding: 10px;
-  background-color: #04C1AD;
+  background-color: #20B2AA;
   color: #FFF;
   border-top: 1px solid #f1f1f1;
   text-align: center;
@@ -269,7 +269,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #04C1AD;
+  background-color: #20B2AA;
 }
 nav ul .brand {
   float: left;
