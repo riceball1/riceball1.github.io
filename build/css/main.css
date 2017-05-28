@@ -148,7 +148,6 @@ main {
   text-align: center;
   line-height: 100px;
   font-size: 2em;
-  animation: bounce 1s infinite alternate;
 }
 /** bouncing thanks to this article: http://stackoverflow.com/questions/32306089/css-smooth-bounce-animation */
 @keyframes bounce {
