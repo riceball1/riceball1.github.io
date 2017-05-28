@@ -82,15 +82,15 @@ body {
   background-color: #f1f1f1;
 }
 body a {
-  color: #20B2AA;
+  color: #52BE80;
   text-decoration: none;
   font-weight: bold;
 }
 body a span {
-  border-bottom: 2px dotted #20B2AA;
+  border-bottom: 2px dotted #555;
 }
 body a:hover {
-  color: #004141;
+  color: #52BE80;
 }
 body a:hover span {
   border-bottom: none;
@@ -111,7 +111,7 @@ header h1.title {
 }
 header h2 {
   font-size: 2em;
-  color: #20B2AA;
+  color: #52BE80;
 }
 /** MAIN BODY **/
 main {
@@ -135,7 +135,8 @@ main {
   font-size: .8em;
 }
 .fa-code {
-  background-color: #20B2AA;
+  background-color: #555;
+  color: #52BE80;
   height: 100px;
   width: 100px;
   border-radius: 50px;
@@ -182,7 +183,8 @@ button {
   padding: 10px;
   font-size: 1.2em;
   text-align: center;
-  background-color: #20B2AA;
+  background-color: #555;
+  color: #52BE80;
   border: none;
   margin: 0 auto;
   cursor: pointer;
@@ -213,16 +215,17 @@ button {
   transition-duration: 0.4s;
 }
 h4 {
-  color: #20B2AA;
+  color: #555;
   text-transform: uppercase;
 }
 .keywords {
   font-size: .8em;
   text-transform: uppercase;
-  color: #20B2AA;
+  color: #555;
 }
 .project-btn {
-  background-color: #20B2AA;
+  background-color: #555;
+  color: #52BE80;
   border: none;
   padding: 2%;
   width: 25%;
@@ -231,8 +234,8 @@ h4 {
   cursor: pointer;
 }
 .project-btn:hover {
-  background-color: #555;
-  color: #20B2AA;
+  background-color: #52BE80;
+  color: #555;
   transition-duration: 0.4s;
 }
 .about {
@@ -246,8 +249,8 @@ footer {
   height: 60px;
   width: 100%;
   padding: 10px;
-  background-color: #20B2AA;
-  color: #FFF;
+  background-color: #555;
+  color: #52BE80;
   border-top: 1px solid #f1f1f1;
   text-align: center;
 }
@@ -269,7 +272,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #20B2AA;
+  background-color: #555;
 }
 nav ul .brand {
   float: left;
@@ -282,7 +285,7 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  color: white;
+  color: #52BE80;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

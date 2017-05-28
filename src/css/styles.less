@@ -11,14 +11,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: @lightgray;
   a {
-    color: @maincolor;
+    color: @secondcolor;
     text-decoration: none;
     font-weight: bold;
     span {
       border-bottom: 2px dotted @maincolor;
     }
     &:hover {
-      color: @darkteal;
+      color: @secondcolor;
       span {
         border-bottom: none;
       }
@@ -38,12 +38,11 @@ header {
   h1.title {
     font-family: 'Sanchez', serif;
     font-size: 3em;
-    color: @darkgray;
+    color: @maincolor;
   }
   h2 {
     font-size: 2em;
-    // font-family: 'Patua One', sans-serif;
-    color: @maincolor;
+    color: @secondcolor;
   }
 }
 
@@ -75,6 +74,7 @@ main {
 
 .fa-code {
   background-color: @maincolor;
+  color: @secondcolor;
   height: 100px;
   width: 100px;
   border-radius: 50px;
@@ -127,6 +127,7 @@ button {
   font-size: 1.2em;
   text-align: center;
   background-color: @maincolor;
+  color: @secondcolor;
   border: none;
   margin: 0 auto;
   cursor: pointer;
@@ -151,7 +152,7 @@ button {
   height: auto;
   margin: 0 auto;
   filter: grayscale(100%);
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 &:hover{
   box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     filter: grayscale(0%);
@@ -172,6 +173,7 @@ h4 {
 
 .project-btn {
   background-color: @maincolor;
+  color: @secondcolor;
   border: none;
   padding: 2%;
   width: 25%;
@@ -179,7 +181,7 @@ h4 {
   margin: 3px;
   cursor: pointer;
   &:hover {
-    background-color: @darkgray;
+    background-color: @secondcolor;
     color: @maincolor;
     transition-duration: 0.4s;
   }
@@ -200,7 +202,7 @@ footer {
   width: 100%;
   padding: 10px;
   background-color: @maincolor;
-  color: @white;
+  color: @secondcolor;
   border-top: 1px solid @lightgray;
   text-align: center;
 }
@@ -241,7 +243,7 @@ nav {
       float: right;
       a {
         display: block;
-        color: white;
+        color: @secondcolor;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
