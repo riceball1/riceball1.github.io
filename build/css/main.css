@@ -244,14 +244,17 @@ h4 {
 }
 /** sticky footer **/
 footer {
-  height: 100%;
+  height: auto;
   margin-top: -60px;
   width: 100%;
   padding: 10%;
   background-color: #555;
-  color: #52BE80;
+  color: #000;
   text-align: center;
   border-top: 3px solid #52BE80;
+}
+footer p {
+  padding: 40px;
 }
 .other-projects {
   text-align: left;
