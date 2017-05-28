@@ -77,7 +77,6 @@
   box-sizing: border-box;
 }
 body {
-  margin-bottom: 100px;
   font-family: 'Open Sans', sans-serif;
   background-color: #f1f1f1;
 }
@@ -116,6 +115,7 @@ header h2 {
 /** MAIN BODY **/
 main {
   padding: 5%;
+  margin-bottom: 50px;
 }
 .social-media {
   color: #555;
@@ -243,10 +243,8 @@ h4 {
 }
 /** fixed height footer **/
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   height: 60px;
+  margin-top: -60px;
   width: 100%;
   padding: 10px;
   background-color: #555;
