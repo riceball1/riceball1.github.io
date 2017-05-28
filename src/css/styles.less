@@ -55,11 +55,15 @@ main {
 }
 
 .social-media {
-  color: @darkgray;
-  margin: 10px auto;
-  font-size: 1.2em;
-  line-height: 30px;
-  width: 80%;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  // font-size: 1.2em;
+  a {
+    span {
+      border-bottom: 2px dotted @black;
+    }
+  }  
 }
 
 .quote {
@@ -194,19 +198,17 @@ h4 {
   margin-top: 5%;
 }
 
-/** fixed height footer **/
+/** sticky footer **/
 footer {
-	// position: absolute;
-  // left: 0;
-  // bottom: 0;
-  height: 60px;
+
+  height: 100%;
   margin-top: -60px;
   width: 100%;
-  padding: 10px;
+  padding: 10%;
   background-color: @maincolor;
   color: @secondcolor;
-  border-top: 1px solid @lightgray;
   text-align: center;
+  border-top: 3px solid @secondcolor;
 }
 
 .other-projects {
@@ -229,6 +231,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   ul {
     list-style-type: none;
     margin: 0;
@@ -271,9 +274,6 @@ nav {
   }
   .quote {
     font-size: .8em;
-    text-align: center;
-  }
-  .social-media {
     text-align: center;
   }
   header {
