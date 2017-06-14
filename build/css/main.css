@@ -132,10 +132,23 @@ main {
 }
 .quote p {
   font-size: 1em;
+  quotes: "“" "”" "‘" "’";
 }
-.quote p.cite {
+.quote p:before {
+  content: open-quote;
+}
+.quote p:after {
+  content: close-quote;
+}
+.quote .cite {
   font-size: .8em;
   color: #555;
+}
+.quote .cite:before {
+  content: no-open-quote;
+}
+.quote .cite:after {
+  content: no-close-quote;
 }
 .fa-code {
   background-color: #555;
