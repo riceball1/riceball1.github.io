@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/riceball1/riceball1.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-less": "^3.3.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "less-plugin-autoprefix": "^1.5.1"
   }
 }

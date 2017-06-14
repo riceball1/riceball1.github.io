@@ -81,7 +81,7 @@ body {
   background-color: #f1f1f1;
 }
 body a {
-  color: #52BE80;
+  color: #04C1AD;
   text-decoration: none;
   font-weight: bold;
 }
@@ -89,7 +89,7 @@ body a span {
   border-bottom: 2px dotted #555;
 }
 body a:hover {
-  color: #52BE80;
+  color: #04C1AD;
 }
 body a:hover span {
   border-bottom: none;
@@ -110,7 +110,7 @@ header h1.title {
 }
 header h2 {
   font-size: 2em;
-  color: #52BE80;
+  color: #04C1AD;
 }
 /** MAIN BODY **/
 main {
@@ -126,18 +126,20 @@ main {
   border-bottom: 2px dotted #000;
 }
 .quote {
-  color: #555;
+  color: #04C1AD;
   margin: 5% 0;
+  width: 50%;
 }
 .quote p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .quote p.cite {
   font-size: .8em;
+  color: #555;
 }
 .fa-code {
   background-color: #555;
-  color: #52BE80;
+  color: #04C1AD;
   height: 100px;
   width: 100px;
   border-radius: 50px;
@@ -184,7 +186,7 @@ button {
   font-size: 1.2em;
   text-align: center;
   background-color: #555;
-  color: #52BE80;
+  color: #04C1AD;
   border: none;
   margin: 0 auto;
   cursor: pointer;
@@ -225,7 +227,7 @@ h4 {
 }
 .project-btn {
   background-color: #555;
-  color: #52BE80;
+  color: #04C1AD;
   border: none;
   padding: 2%;
   width: 25%;
@@ -234,7 +236,7 @@ h4 {
   cursor: pointer;
 }
 .project-btn:hover {
-  background-color: #52BE80;
+  background-color: #04C1AD;
   color: #555;
   transition-duration: 0.4s;
 }
@@ -250,7 +252,7 @@ footer {
   background-color: #555;
   color: #000;
   text-align: center;
-  border-top: 3px solid #52BE80;
+  border-top: 3px solid #04C1AD;
 }
 footer p {
   padding: 40px;
@@ -287,7 +289,7 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  color: #52BE80;
+  color: #04C1AD;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -306,6 +308,7 @@ nav ul li a {
   .quote {
     font-size: .8em;
     text-align: center;
+    margin: 5% auto;
   }
   header h1,
   header h2 {
