@@ -8,7 +8,7 @@
 
 body {
 	// margin-bottom: 100px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
   background-color: @lightgray;
   a {
     color: @secondcolor;
@@ -18,7 +18,7 @@ body {
       border-bottom: 2px dotted @maincolor;
     }
     &:hover {
-      color: @secondcolor;
+      color: white;
       span {
         border-bottom: none;
       }
@@ -36,7 +36,7 @@ header {
     margin: 3px;
   }
   h1.title {
-    font-family: 'Sanchez', serif;
+    font-family: 'Overpass', serif;
     font-size: 3em;
     color: @maincolor;
   }
@@ -139,7 +139,7 @@ main {
   margin-bottom: 15%;
 }
 button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
 }
 
 .scroll-btn {
@@ -151,7 +151,7 @@ button {
   border: none;
   margin: 0 auto;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
   &:hover {
     color: white;
     background-color: @darkgray;
@@ -181,14 +181,14 @@ button {
 }
 
 h4 {
-  color: @maincolor;
+  color: @secondcolor;
   text-transform: uppercase;
 }
 
 .keywords {
   font-size: .8em;
   text-transform: uppercase;
-  color: @maincolor;
+  color: @secondcolor;
 }
 
 .project-btn {
@@ -229,6 +229,10 @@ footer {
   }
 }
 
+.foot-msg {
+  color: @secondcolor;
+}
+
 .other-projects {
   text-align: left;
   h4 {
@@ -236,13 +240,7 @@ footer {
   }
 }
 
-// .btn {
-// margin: 10px auto;
-// }
-// .check-btn {
-//   text-align: center;
-  
-// }
+
 nav {
   position: fixed;
   right: 0;

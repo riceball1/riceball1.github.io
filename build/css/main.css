@@ -77,7 +77,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
   background-color: #f1f1f1;
 }
 body a {
@@ -89,7 +89,7 @@ body a span {
   border-bottom: 2px dotted #555;
 }
 body a:hover {
-  color: #04C1AD;
+  color: white;
 }
 body a:hover span {
   border-bottom: none;
@@ -104,7 +104,7 @@ header h2 {
   margin: 3px;
 }
 header h1.title {
-  font-family: 'Sanchez', serif;
+  font-family: 'Overpass', serif;
   font-size: 3em;
   color: #555;
 }
@@ -192,7 +192,7 @@ main {
   margin-bottom: 15%;
 }
 button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
 }
 .scroll-btn {
   padding: 10px;
@@ -203,7 +203,7 @@ button {
   border: none;
   margin: 0 auto;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
 }
 .scroll-btn:hover {
   color: white;
@@ -230,13 +230,13 @@ button {
   transition-duration: 0.4s;
 }
 h4 {
-  color: #555;
+  color: #04C1AD;
   text-transform: uppercase;
 }
 .keywords {
   font-size: .8em;
   text-transform: uppercase;
-  color: #555;
+  color: #04C1AD;
 }
 .project-btn {
   background-color: #555;
@@ -269,6 +269,9 @@ footer {
 }
 footer p {
   padding: 40px;
+}
+.foot-msg {
+  color: #04C1AD;
 }
 .other-projects {
   text-align: left;
