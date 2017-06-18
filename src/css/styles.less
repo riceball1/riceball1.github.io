@@ -143,32 +143,41 @@ button {
 }
 
 .scroll-btn {
-  padding: 10px;
-  font-size: 1.2em;
-  text-align: center;
   background-color: @maincolor;
   color: @secondcolor;
   border: none;
-  margin: 0 auto;
+  margin: 3px;
+  padding: 10px;
   cursor: pointer;
-  font-family: 'Overpass', sans-serif;
+  display: inline-block;
+  font-size: 1.5em;
+  width: 30%;
+  text-align: center;
   &:hover {
-    color: white;
-    background-color: @darkgray;
+    color: @maincolor;
+    background: @secondcolor;
+    transition-duration: 0.4s;
   }
 }
 
 .project {
   margin-bottom: 5%;
-  padding: 5%;
+  height: 700px;
   background-color: white;
   line-height: 2em;
   text-align: center;
+  padding: 5%;
+  border: 5px solid @lightgray;
+}
+
+.about-project {
+  &:extend(.project);
+  height: 20%;
 }
 
 .project-img {
   display: block;
-  width: 50%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
   filter: grayscale(100%);
@@ -195,19 +204,17 @@ h4 {
   background-color: @maincolor;
   color: @secondcolor;
   border: none;
-  padding: 2%;
-  width: 25%;
-  border-radius: 3px;
   margin: 3px;
+  padding: 3%;
   cursor: pointer;
+  display: inline-block;
+  width: 25%;
   &:hover {
-    background-color: @secondcolor;
     color: @maincolor;
+    background: @secondcolor;
     transition-duration: 0.4s;
   }
 }
-
-
 
 .about {
   margin-top: 5%;
@@ -331,11 +338,6 @@ nav {
   .paragraph {
     width: 100%;
   }
-
-  .col-12 .project {
-    width: 100%;
-  }
-
  
  
 }

@@ -195,30 +195,38 @@ button {
   font-family: 'Overpass', sans-serif;
 }
 .scroll-btn {
-  padding: 10px;
-  font-size: 1.2em;
-  text-align: center;
   background-color: #555;
   color: #04C1AD;
   border: none;
-  margin: 0 auto;
+  margin: 3px;
+  padding: 10px;
   cursor: pointer;
-  font-family: 'Overpass', sans-serif;
+  display: inline-block;
+  font-size: 1.5em;
+  width: 30%;
+  text-align: center;
 }
 .scroll-btn:hover {
-  color: white;
-  background-color: #555;
+  color: #555;
+  background: #04C1AD;
+  transition-duration: 0.4s;
 }
-.project {
+.project,
+.about-project {
   margin-bottom: 5%;
-  padding: 5%;
+  height: 700px;
   background-color: white;
   line-height: 2em;
   text-align: center;
+  padding: 5%;
+  border: 5px solid #f1f1f1;
+}
+.about-project {
+  height: 20%;
 }
 .project-img {
   display: block;
-  width: 50%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
   filter: grayscale(100%);
@@ -242,15 +250,15 @@ h4 {
   background-color: #555;
   color: #04C1AD;
   border: none;
-  padding: 2%;
-  width: 25%;
-  border-radius: 3px;
   margin: 3px;
+  padding: 3%;
   cursor: pointer;
+  display: inline-block;
+  width: 25%;
 }
 .project-btn:hover {
-  background-color: #04C1AD;
   color: #555;
+  background: #04C1AD;
   transition-duration: 0.4s;
 }
 .about {
@@ -349,9 +357,6 @@ nav ul li a {
     display: none;
   }
   .paragraph {
-    width: 100%;
-  }
-  .col-12 .project {
     width: 100%;
   }
 }
