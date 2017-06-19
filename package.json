@@ -22,6 +22,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
     "gulp-deporder": "^1.1.0",
     "gulp-less": "^3.3.0",
     "gulp-strip-debug": "^1.1.0",

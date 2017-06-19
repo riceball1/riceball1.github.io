@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var less = require('gulp-less');
 var LessAutoprefix = require('less-plugin-autoprefix');
 var autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] });
+var cssmin = require('gulp-cssmin');
 var path = require('path');
 
 
@@ -55,7 +56,11 @@ gulp.task('css', function() {
 		.pipe(less({
 			paths: [path.join(__dirname, 'less', 'includes')],
 			plugins: [autoprefix]
-		}))		.pipe(gulp.dest(folder.build + 'css/'));
+		}))		
+		.pipe(cssmin().on('error', function(err) {
+			console.log(err);
+		}))
+		.pipe(gulp.dest(folder.build + 'css/'));
 });
 
 // run all tasks
