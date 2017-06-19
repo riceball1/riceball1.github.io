@@ -132,13 +132,6 @@ main {
 }
 .quote p {
   font-size: 1em;
-  quotes: "“" "”" "‘" "’";
-}
-.quote p:before {
-  content: open-quote;
-}
-.quote p:after {
-  content: close-quote;
 }
 .quote .cite {
   font-size: .8em;
