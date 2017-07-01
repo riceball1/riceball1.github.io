@@ -16,6 +16,11 @@ a {
 	color: #3B95F0;
 }
 
+a:hover {
+	text-decoration: none;
+	color: #3B95F0;
+}
+
 
 /** MAIN SECTION **/
 
