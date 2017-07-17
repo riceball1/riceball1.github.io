@@ -42,7 +42,7 @@ $('a[href*="#"]')
   });
 
 function startSubtitle() {
-  var list = ['minimialist', 'amateur polyglot', 'crazy foodie', ' full stack web developer'];
+  var list = ['minimialist', 'amateur polyglot', 'crazy foodie', ' web developer'];
   var count = 0;
   setInterval(function() {
       $('#subtitle').text(list[count % list.length]);
