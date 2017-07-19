@@ -7,7 +7,6 @@
 }
 
 body {
-	// margin-bottom: 100px;
   font-family: 'Overpass', sans-serif;
   background-color: @lightgray;
   a {
@@ -29,11 +28,12 @@ body {
 /** HEADER **/
 
 header {
-  margin: 20% auto 0px auto;
+  margin: 20% auto;
   width: 80%;
 
   h1, h2 {
-    margin: 3px;
+    text-align: center;
+    margin: 3px auto;
   }
   h1.title {
     font-family: 'Overpass', serif;
@@ -58,7 +58,6 @@ main {
   height: auto;
   width: 100%;
   margin: 0;
-  // font-size: 1.2em;
   a {
     span {
       border-bottom: 2px dotted @black;
@@ -68,18 +67,13 @@ main {
 
 .quote {
   color: @secondcolor;
-  margin: 5% 0;
+  margin: 5% auto;
   width: 50%;
+  text-align: center;
   p {
     font-size: 1em;
-    // quotes: "“" "”" "‘" "’";
   }
-  // p:before {
-  //   content: open-quote;
-  // }
-  // p:after {
-  //   content: close-quote;
-  // }
+
   .cite {
     font-size: .8em;
     color: @maincolor;
@@ -121,7 +115,8 @@ main {
 .main-btn {
   @extends .btn;
   width: 100%;
-  margin: 30px 0;
+  text-align: center;
+  margin: 30px auto;
 }
 
 .paragraph {
@@ -146,7 +141,7 @@ button {
   background-color: @maincolor;
   color: @secondcolor;
   border: none;
-  margin: 3px;
+  margin: 3px auto;
   padding: 10px;
   cursor: pointer;
   display: inline-block;
@@ -294,10 +289,6 @@ nav {
    .personal {
     margin-top: 90%;
   }
-
-  //  .about-paragraph {
-  //   width: 100%;
-  // }
 }
 
 @media screen and (max-width: 799px) {
@@ -311,9 +302,9 @@ nav {
     margin: 5% auto;
   }
   header {
-    h1, h2 {
-      text-align: center;
-    }
+    // h1, h2 {
+    //   text-align: center;
+    // }
     h1.title {
       font-size: 2em;
     }
