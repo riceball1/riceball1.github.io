@@ -17,7 +17,7 @@ body {
       border-bottom: 2px dotted @maincolor;
     }
     &:hover {
-      color: white;
+      color: @secondcolor;
       span {
         border-bottom: none;
       }
@@ -215,6 +215,10 @@ h4 {
   margin-top: 5%;
 }
 
+.connect-link {
+  color: @maincolor;
+}
+
 /** sticky footer **/
 footer {
 
@@ -257,12 +261,12 @@ nav {
     padding: 0;
     overflow: hidden;
     background-color: @maincolor;
-    .brand {
-      float: left;
-      a {
-        font-size: 1.2em;
-      }
-    }
+    // .brand {
+    //   float: left;
+    //   a {
+    //     font-size: 1.2em;
+    //   }
+    // }
     li {
       float: right;
       a {
@@ -281,6 +285,12 @@ nav {
   &:hover {
     color: @lightcoral;
   }
+}
+
+#profile-image {
+  background-image: url('http://www.danafng.com/public/dana-profile-pic.jpg');
+  height: 100px;
+  width: 100px;
 }
 
 
