@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dana Ng</title>
- <!--    <link href="./build/css/normalize.css" rel="stylesheet">
+    <!--    <link href="./build/css/normalize.css" rel="stylesheet">
     <link href="./build/css/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
     <link href="./build/css/main.css" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <body onload="startSubtitle()">
     <!-- nav -->
-    <nav>
+    <nav class="navBar">
         <ul>
             <!-- <li class="brand"><a href="#top"></a></li> -->
             <li><a href="#links">connect</a></li>
@@ -32,12 +32,11 @@
                 <h2>who loves to code</h2>
                 <div id="profile-image"></div>
                 <div class="main-btn">
-                        <a href="#about" class="scroll-btn">learn more</a>
+                    <a href="#about" class="scroll-btn">learn more</a>
                 </div>
             </div>
             <div class="quote">
                 <p> "Life is really simple, but we insist on making it complicated." </p>
-                
             </div>
         </header>
         <section class="personal">
@@ -48,7 +47,18 @@
                         <p>Hello, my name is Dana Ng, and I'm based in San Francisco Bay Area. I'm a web developer who loves to build clean, efficient web applications focusing on the full stack. Currently I'm coding in JavaScript with experience in Node.js, MongoDB, React and Redux.</p>
                         <p>Besides learning more about programming, I'm also an aspiring polyglot, currently learning Mandarin, Turkish and French, with fluency in English and limited working proficiency in Cantonese. I like staying active outdoors by traveling, hiking and playing soccer. In addition, I'm a foodie and amateur chef. I hope to combine my interests in living a minimalist and sustainable lifestyle with my work. Feel free to <a href="#connect" class="connect-link">connect</a> with me.</p>
                         <div class="btn">
-                                <a href="#projects" class="scroll-btn">checkout my projects</a>
+                            <a href="#projects" class="scroll-btn">checkout my projects</a>
+                        </div>
+
+                        <div class="col-12">
+                            <h3>Skills</h3>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">React</span>
+                            <span class="skill">Redux</span>
+                            <span class="skill">Nodejs</span>
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <br/>
                         </div>
                     </div>
                 </div>
@@ -84,27 +94,19 @@
                         <p>An application that uses Twitter API and Yandex API to query for tweets, and translate the tweets into another language, retweet in new language and view original tweets.</p>
                         <p class="keywords">javascript, heroku, node/express, jquery, yandex api, twitter api</p>
                         <p>
-                            
-                                <a href="https://github.com/riceball1/multilingual-twitter" target="_blank" class="project-btn">repo</a>
-                           
-                            
-                                <a href="https://multilingual-twitter.herokuapp.com/" target="_blank" class="project-btn">demo</a>
-                        
+                            <a href="https://github.com/riceball1/multilingual-twitter" target="_blank" class="project-btn">repo</a>
+                            <a href="https://multilingual-twitter.herokuapp.com/" target="_blank" class="project-btn">demo</a>
                         </p>
                     </div>
                     <div class="col-6 project">
                         <h4>MyReads</h4>
-                        <a href="https://github.com/riceball1/reactnd-project-myreads-starter" target="_blank"><div id="react-read"
-                        class="project-img"></div></a>
+                        <a href="https://github.com/riceball1/reactnd-project-myreads-starter" target="_blank">
+                            <div id="react-read" class="project-img"></div>
+                        </a>
                         <p>A react app that allows users to search an api and add books to a personal library, with individual books linking to a page with more details about the book.</p>
                         <p class="keywords">javascript, create-react-app, api, udacity, react-router-dom, react</p>
                         <p>
-                            
-                                <a href="https://github.com/riceball1/reactnd-project-myreads-starter" target="_blank" class="project-btn">repo</a>
-                           
-                            
-                                
-                        
+                            <a href="https://github.com/riceball1/reactnd-project-myreads-starter" target="_blank" class="project-btn">repo</a>
                         </p>
                     </div>
                     <div class="col-6 project other-projects">
@@ -115,33 +117,32 @@
                             <li>Udacity - Frontend Web Developer Nanodegree
                                 <ul>
                                     <li><a href="http://www.danafng.com/frontend-nanodegree-resume/">Resume (jQuery + HTML + CSS)</a></li>
-                                    <li><a href="http://www.danafng.com/neighborhood-map/">Neighborhood Map (Google Maps + Knockout.js)</a><li>
+                                    <li><a href="http://www.danafng.com/neighborhood-map/">Neighborhood Map (Google Maps + Knockout.js)</a>
+                                        <li>
                                 </ul>
-                            </li>
-                            <li> Udacity - React Nanodegree
-                                <ul>
-                                    <li>My Reads</li>
-                                </ul>
-                            </li>
-                            <li><em>Harvard CS50 - Introduction to Computer Science [incomplete]</em></li>
+                                </li>
+                                <li> Udacity - React Nanodegree
+                                    <ul>
+                                        <li>My Reads</li>
+                                    </ul>
+                                </li>
+                                <li><em>Harvard CS50 - Introduction to Computer Science [incomplete]</em></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="social-media" id="links">
             <a href="https://github.com/riceball1" target="_blank"><span>Github</span></a> &#8886;
-           <!--  <a href="http://danafng.blogspot.com/" target="_blank"><span>Blog</span></a> &#8886; -->
-            <a href="https://www.linkedin.com/in/danafng/" target="_blank"><span>Linkedin</span></a> 
+            <!--  <a href="http://danafng.blogspot.com/" target="_blank"><span>Blog</span></a> &#8886; -->
+            <a href="https://www.linkedin.com/in/danafng/" target="_blank"><span>Linkedin</span></a>
             <!-- &#8886; -->
-           <!--  <a href="https://drive.google.com/file/d/0BzS51-MEgTqCcDZYRkktQ1ozZFk/view?usp=sharing" target="_blank"><span>Resume</span></a> -->
+            <!--  <a href="https://drive.google.com/file/d/0BzS51-MEgTqCcDZYRkktQ1ozZFk/view?usp=sharing" target="_blank"><span>Resume</span></a> -->
             <p class="foot-msg">Copyright &copy; 2017
-                <br> Coded with
-                &lt;3 by Dana Ng</p>
-                <p><a href="#">Top</a></p>
+                <br> Coded with &lt;3 by Dana Ng</p>
+            <p><a href="#">Top</a></p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

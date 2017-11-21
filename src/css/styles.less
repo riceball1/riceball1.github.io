@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: @lightgray;
+  letter-spacing: .3px;
   a {
     color: @secondcolor;
     text-decoration: none;
@@ -25,6 +26,10 @@ body {
   }
 }
 
+.navBar a {
+  color: white;
+}
+
 /** HEADER **/
 
 header {
@@ -36,7 +41,7 @@ header {
     margin: 3px auto;
   }
   h1.title {
-    font-family: 'Overpass', serif;
+    font-family: 'Lato', serif;
     font-size: 3em;
     color: @maincolor;
   }
@@ -134,7 +139,7 @@ main {
   margin-bottom: 15%;
 }
 button {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .scroll-btn {
@@ -148,6 +153,7 @@ button {
   font-size: 1.5em;
   width: 30%;
   text-align: center;
+  border-radius: 5px;
   &:hover {
     color: @maincolor;
     background: @secondcolor;
@@ -170,7 +176,9 @@ button {
   height: 20%;
   text-align: justify;
   .btn {
+    margin: 10px 0;
     text-align: center;
+    border-radius: 5px;
   }
 }
 
@@ -199,6 +207,14 @@ h4 {
   color: @secondcolor;
 }
 
+.skill {
+  color: @secondcolor;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: @maincolor;
+}
+
 .project-btn {
   background-color: @maincolor;
   color: @secondcolor;
@@ -207,6 +223,7 @@ h4 {
   padding: 3%;
   cursor: pointer;
   display: inline-block;
+  border-radius: 5px;
   width: 25%;
   &:hover {
     color: @maincolor;
