@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: @lightgray;
+  background-color: @white;
   letter-spacing: .3px;
   a {
     color: @secondcolor;
@@ -25,6 +25,7 @@ body {
     }
   }
 }
+
 
 .navBar a {
   color: white;
@@ -47,7 +48,7 @@ header {
   }
   h2 {
     font-size: 2em;
-    color: @secondcolor;
+    color: @darkgray;
   }
 }
 
@@ -274,21 +275,17 @@ nav {
   top: 0;
   width: 100%;
   z-index: 100;
+  font-size: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   ul {
+    text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: @maincolor;
-    // .brand {
-    //   float: left;
-    //   a {
-    //     font-size: 1.2em;
-    //   }
-    // }
     li {
-      float: right;
+      display: inline-block;
       a {
         margin: 0 auto;
         display: block;
@@ -315,7 +312,7 @@ nav {
   width: 150px;
   margin: 5% auto;
   border-radius: 75px;
-  border: 5px solid white;
+  border: 5px solid @lightgray;
 }
 
 
