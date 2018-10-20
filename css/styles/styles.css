@@ -22,13 +22,15 @@
 }
 
 /****** GENERAL STYLES */
+* {
+  box-sizing: border-box;
+}
 
 body, html {
   font-family: "NotoSans Regular", Arial, sans-serif;
   height: 100%;
   margin: 0;
   color: #000;
-  box-sizing: border-box;
 }
 
 a {
@@ -97,8 +99,9 @@ footer p {
 
 /*** OVERRIDING STYLES */
 
-.fa-github-alt {
+.fa {
   font-size: 2em;
+  color: var(--secondary-color)
 }
 
 /*** CUSTOM STYLES */
@@ -118,7 +121,35 @@ footer p {
 }
 
 .main {
-  margin: 30% 20%;
+  margin: 30% 20% 10% 20%;
+}
+
+/*** ABOUT SECTION **/
+#me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 20% auto;
+}
+.me-card {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  margin: 10% auto;
+  border: 2px dotted var(--secondary-color);
+  height: 300px;
+  color: var(--main-color);
+  border-radius: 3px;
+  font-size: .8em;
+  line-height: 3em;
+  text-align: justify;
+  padding: 5%;
+}
+
+.me-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /*** CARD SECTION */
@@ -128,13 +159,14 @@ footer p {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  margin: 20% auto;
 }
 
 .card {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 20%;
-  border-radius: 5px;
+  border-radius: 3px;
   height: auto;
   margin: 3px;
   color: var(--main-color);
@@ -142,6 +174,7 @@ footer p {
 
 .card h1 {
   font-size: 1.5em;
+  color: #000;
 }
 
 .card-image {
@@ -213,7 +246,7 @@ polygon.arrow-top {
   }
 
   .arrow-container {
-    margin: 60% 0;
+    margin: 40% 0;
   }
 
   .wrapper h1 {
