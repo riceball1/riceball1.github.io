@@ -105,6 +105,10 @@ footer p {
   margin: 10px;
 }
 
+.fa:hover {
+  color: var(--main-color);
+}
+
 /*** CUSTOM STYLES */
 
 
