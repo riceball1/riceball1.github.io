@@ -14,8 +14,11 @@
 }
 
 :root {
-  --main-font-color: #8F8989; /* light gray */
-  --secondary-font-color: #F6D3EB; /* light rose */
+  --color-pink: #F6D3EB;
+  --color-lightgray: #8F8989;
+  --color-teal: #48AF98;
+  --main-color: var(--color-lightgray); /* light gray */
+  --secondary-color: var(--color-teal); /* light rose */
 }
 
 /****** GENERAL STYLES */
@@ -30,7 +33,7 @@ body, html {
 
 a {
   text-decoration: none;
-  color: var(--main-font-color);
+  color: var(--main-color);
 }
 
 h1 {
@@ -51,7 +54,7 @@ footer, .push, nav {
 
 footer, nav {
   font-size: .8em;
-  color: var(--main-font-color);
+  color: var(--main-color);
 }
 
 footer {
@@ -62,14 +65,14 @@ footer {
 
 nav {
   background-color: white;
-  color: var(--main-font-color);
+  color: var(--main-color);
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0), 0 2px 15px 0 rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -83,7 +86,9 @@ nav a {
 }
 
 nav span:hover {
-  color: var(--main-font-color);
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  font-weight: bold;
 }
 
 footer p {
@@ -107,7 +112,7 @@ footer p {
 
 .tagline {
   font-size: .8em;
-  color: var(--main-font-color);
+  color: var(--main-color);
   word-wrap: wrap;
   margin: 0 auto;
 }
@@ -132,7 +137,7 @@ footer p {
   border-radius: 5px;
   height: auto;
   margin: 3px;
-  color: var(--main-font-color);
+  color: var(--main-color);
 }
 
 .card h1 {
@@ -141,7 +146,7 @@ footer p {
 
 .card-image {
   width: 100%;
-  background-color: #EFEFEF;
+  background-color: var(--secondary-color);
   height: 150px;
   border-radius: 5px 5px 0 0;
 }
@@ -170,7 +175,7 @@ footer p {
   height: 65px;
 }
 #more-arrows:hover polygon {
-  fill: #F6D3EB;
+  fill: var(--secondary-color);
   transition: all .2s ease-out;
 }
 #more-arrows:hover polygon.arrow-bottom {
@@ -183,7 +188,7 @@ footer p {
 }
 
 polygon {
-  fill: #F6D3EB;
+  fill: var(--secondary-color);
   transition: all .2s ease-out;
 }
 polygon.arrow-middle {
