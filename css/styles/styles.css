@@ -139,7 +139,7 @@ footer p {
   width: 60%;
   margin: 10% auto;
   border: 2px dotted var(--secondary-color);
-  height: 300px;
+  height: auto;
   color: var(--main-color);
   border-radius: 3px;
   font-size: .8em;
