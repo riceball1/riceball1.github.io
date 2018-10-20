@@ -13,6 +13,10 @@
   src: url("../fonts/NotoSans-Regular.ttf");
 }
 
+:root {
+  --main-font-color: #8F8989; /* light gray */
+  --secondary-font-color: #F6D3EB; /* light rose */
+}
 
 /****** GENERAL STYLES */
 
@@ -20,13 +24,13 @@ body, html {
   font-family: "NotoSans Regular", Arial, sans-serif;
   height: 100%;
   margin: 0;
-  color:#000;
+  color: #000;
   box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--main-font-color);
 }
 
 h1 {
@@ -36,7 +40,7 @@ h1 {
 .wrapper {
   text-align: center;
   min-height: 100%;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
   margin-top: 150px;
 }
 
@@ -47,7 +51,7 @@ footer, .push, nav {
 
 footer, nav {
   font-size: .8em;
-  color: #00000075;
+  color: var(--main-font-color);
 }
 
 footer {
@@ -58,7 +62,7 @@ footer {
 
 nav {
   background-color: white;
-  color: #00000075;
+  color: var(--main-font-color);
   position: fixed;
   top: 0;
   right: 0;
@@ -74,7 +78,7 @@ nav span {
 }
 
 nav a {
-  color: #00000075;
+  color: var(--main-font-color);
 }
 
 footer p {
@@ -98,7 +102,7 @@ footer p {
 
 .tagline {
   font-size: .8em;
-  color: #00000075;
+  color: var(--main-font-color);
   word-wrap: wrap;
   margin: 0 auto;
 }
@@ -117,13 +121,13 @@ footer p {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 20%;
   border-radius: 5px;
   height: auto;
   margin: 3px;
-  color: #00000075;
+  color: var(--main-font-color);
 }
 
 .card h1 {
@@ -132,7 +136,7 @@ footer p {
 
 .card-image {
   width: 100%;
-  background-color: #00000075;
+  background-color: #EFEFEF;
   height: 150px;
   border-radius: 5px 5px 0 0;
 }
@@ -200,6 +204,10 @@ polygon.arrow-top {
 
   .arrow-container {
     margin: 60% 0;
+  }
+
+  .wrapper h1 {
+    font-size: 2em;
   }
 }
 
