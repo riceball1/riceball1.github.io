@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "JosefinSans SemiBold";
+  src: url("../fonts/JosefinSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans Bold";
+  src: url("../fonts/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans Regular";
+  src: url("../fonts/NotoSans-Regular.ttf");
+}
+
+
+/****** GENERAL STYLES */
+
+body, html {
+  font-family: "NotoSans Regular", Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-family: "JosefinSans SemiBold", Arial, sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+  min-height: 100%;
+  margin-bottom: -50px;
+  margin-top: 100px;
+}
+
+footer, .push, nav {
+  height: 50px;
+  text-align: center;
+}
+
+footer, nav {
+  background-color: teal;
+  font-size: .8em;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer p {
+  padding: 10px;
+}
+
+/*** OVERRIDING STYLES */
+
+.fa-github-alt {
+  font-size: 2em;
+}
