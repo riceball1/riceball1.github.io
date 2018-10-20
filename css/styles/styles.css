@@ -101,7 +101,8 @@ footer p {
 
 .fa {
   font-size: 2em;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+  margin: 10px;
 }
 
 /*** CUSTOM STYLES */
@@ -231,6 +232,12 @@ polygon.arrow-top {
   opacity: 0.5;
 }
 
+
+#connect {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
 
 /*** MEDIA QUERIES **/
