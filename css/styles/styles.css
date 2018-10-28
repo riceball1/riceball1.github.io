@@ -130,6 +130,19 @@ footer p {
 }
 
 /*** ABOUT SECTION **/
+
+.blog-link {
+  color: var(--secondary-color);
+}
+
+.blog-link a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  padding: 3px;
+}
+
 #me {
   display: flex;
   flex-direction: column;
