@@ -1,0 +1,52 @@
+:root {
+  --color-pink: #F6D3EB;
+  --color-lightgray: #8F8989;
+  --color-teal: #48AF98;
+  --main-color: var(--color-lightgray); /* light gray */
+  --secondary-color: var(--color-teal); /* light rose */
+}
+
+#main {
+  height: 100vh;
+}
+
+.heading {
+  font-family: 'Stylish', sans-serif;
+}
+
+#shortblurb {
+  margin: 20px auto;
+  height: 50%;
+  width: 80%;
+  text-align: center;
+}
+
+.box {
+  box-shadow: 2px 2px 10px 1px var(--color-lightgray);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.bold-text {
+  font-weight: 600;
+  color: var(--color-teal); /* sea teal green*/
+}
+
+
+/*** OVERRIDING STYLES */
+
+.fa {
+  font-size: 3em !important;
+  color: var(--secondary-color);
+  margin: 10px;
+}
+
+.fa:hover {
+  color: var(--main-color);
+}
+
+#connect {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
