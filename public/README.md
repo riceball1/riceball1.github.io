@@ -8,6 +8,8 @@ Tutorial on building the site found here [link](https://github.com/gitname/react
 
 Command to run new build each time `npm run deploy`
 
+I use `site-content` branch to save a version of the local site and merge it into `master` to make sure that I don't lose the changes.
+
 Looking forward to updating this page more with modern frontend technologies.
 
 Best,
