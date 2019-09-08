@@ -10,7 +10,7 @@ function App() {
 
   // change color
   const changeStyle = () => {
-    const newStyle = {...style.style, color: 'orange'};
+    const newStyle = {...style.style, color: 'pink'};
     setColor({style: newStyle, colorSet: true});
   }
 
@@ -22,6 +22,10 @@ function App() {
         <div className="App-intro">
           <p style={style.style}>Hello <span role="img" aria-label="hand wave">👋</span>! <br/> I'm Dana Ng a Frontend Engineer.</p>
           <div>
+
+            <p className="App-smallContent">
+              This site was built using react and react hooks, and typescript.
+            </p>
             <button onClick={changeStyle} disabled={style.colorSet}>
             Change Style with React Hooks
             </button>

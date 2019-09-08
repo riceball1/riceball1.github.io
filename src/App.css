@@ -6,6 +6,10 @@
   margin: 10% 10%;
 }
 
+.App-smallContent {
+  font-size: 1rem;
+  color: pink;
+}
 
 .App-header {
   background-color: #282c34;
