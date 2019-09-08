@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Nav from './Nav/Nav';
-import './App.css';
+import './App.scss';
 
 function App() {
   const [style, setColor] = useState({
@@ -24,7 +24,7 @@ function App() {
           <div>
 
             <p className="App-smallContent">
-              This site was built using react and react hooks, and typescript.
+              This site was built using react and react hooks, sass and typescript.
             </p>
             <button onClick={changeStyle} disabled={style.colorSet}>
             Change Style with React Hooks
