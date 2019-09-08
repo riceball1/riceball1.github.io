@@ -37,12 +37,21 @@ function App() {
           <p>Not only do I enjoy web development, I also am a minimalist, foodie, international traveller, language lover, and enjoy strength training + soccer.</p>
         </div>
 
-        <div className="App-block" id="project">
+        <div className="App-block" id="projects">
         <h2>Projects</h2>
+        <p>The following will be display of some of my most recent projects to demonstrate my frontend skills.</p>
+          <div className="App-gallery">
+            <div className="App-project">Project 1</div>
+            <div className="App-project">Project 2</div>
+            <div className="App-project">Project 3</div>
+          </div>
         </div>
 
         <div className="App-block" id="connect">
         <h2>Connect</h2>
+        <p>
+        linkedin | github | angel list
+        </p>
         </div>
       </header>
     </div>
