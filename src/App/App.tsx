@@ -26,11 +26,10 @@ function App() {
           <p>{`${theme} mode`}</p>
         </CheckBoxWrapper>
         <h1>Welcome to the {theme} side!</h1>
-        <p>This is the website of <a href="https://www.linkedin.com/in/danafng/" target="_blank" rel="noopener noreferrer">Dana Ng.</a> </p> 
-        <p>I'm a frontend engineer. </p>
-        <p>Currently located in Boston, MA.</p>
-        <p>I'm learning some new stuff. </p> 
-        <p> Can't wait to make more improvements.</p>
+        <p>I'm <a href="https://www.linkedin.com/in/danafng/" target="_blank" rel="noopener noreferrer">Dana Ng</a>, a frontend engineer.</p> 
+        <p>Check out my my projects on <a href="https://github.com/riceball1" target="_blank" rel="noopener noreferrer">github</a>.</p>
+        <p>Currently living in Boston, MA.</p>
+        <p>"I never lose, either I win or I learn" -- Nelson Mandela</p> 
         
         </div>
     </>
