@@ -23,7 +23,7 @@ export const CheckBoxLabel = styled.label`
     margin: 3px;
     background: #ffffff;
     box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
-    transition: 0.2s;
+    transition: 0.4s;
   }
 `;
 export const CheckBox = styled.input`
@@ -41,7 +41,7 @@ export const CheckBox = styled.input`
       width: 18px;
       height: 18px;
       margin-left: 21px;
-      transition: 0.2s;
+      transition: 0.4s;
     }
   }
 `;
