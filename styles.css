@@ -26,6 +26,10 @@
     border-color: orange;
 }
 
+.greeting:hover, .blurb:hover {
+    color: orange;
+}
+
 .blurb {
     margin: 5% auto;
 }
