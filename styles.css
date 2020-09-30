@@ -1,4 +1,35 @@
 * {
     font-family: 'Secular One', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.button {
+    border-radius: 3px;
+    margin: 5% auto;
+    width: 35%;
+    padding: 20px;
+    border: 1px solid white;
+    display: block;
     color: black;
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        width: 100%;
+    }
+}
+
+.button:hover {
+    background-color: orange;
+    border-color: orange;
+}
+
+.blurb {
+    margin: 5% auto;
+}
+
+.emojis {
+    font-size: 2rem;
 }
