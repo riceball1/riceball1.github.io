@@ -14,6 +14,7 @@
   display: block;
   color: black;
   background-color: lightgray;
+  border: 3px solid lightgray;
 }
 
 @media screen and (max-width: 600px) {
@@ -26,9 +27,10 @@
   }
 }
 
-.button:hover {
+.button:hover, .button:focus {
   background-color: orange;
   border-color: orange;
+    border-style: dashed;
 }
 
 .greeting:hover,
