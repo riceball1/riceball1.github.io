@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/riceball1/riceball1.github.io#readme",
   "dependencies": {
-    "nodemon": "^2.0.4",
-    "prettier": "^2.1.2"
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
   }
 }
