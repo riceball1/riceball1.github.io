@@ -1,39 +1,52 @@
 * {
-    font-family: 'Secular One', sans-serif;
-    color: white;
-    background-color: black;
+  font-family: "Secular One", sans-serif;
+  color: white;
+  background-color: black;
 }
 
 .button {
-    border-radius: 3px;
-    margin: 5% auto;
-    width: 35%;
-    padding: 20px;
-    border: 1px solid white;
-    display: block;
-    color: black;
-    background-color: lightgray;
+  border-radius: 3px;
+  margin: 5% auto;
+  min-width: 35%;
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid white;
+  display: block;
+  color: black;
+  background-color: lightgray;
 }
 
 @media screen and (max-width: 600px) {
-    .button {
-        width: 100%;
-    }
+  .button {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .button:hover {
-    background-color: orange;
-    border-color: orange;
+  background-color: orange;
+  border-color: orange;
 }
 
-.greeting:hover, .blurb:hover {
-    color: orange;
+.greeting:hover,
+.blurb:hover {
+  color: orange;
 }
 
 .blurb {
-    margin: 5% auto;
+  margin: 5% auto;
 }
 
 .emojis {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: 10% auto;
 }
