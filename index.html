@@ -2,50 +2,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
-      rel="stylesheet"
-    />
     <link href="styles.css" rel="stylesheet" />
     <title>Dana <3</title>
   </head>
   <body>
-    <main class="flex p-20 h-screen flex-col">
-      <div class="w-full text-center">
-        <h1 class="greeting text-5xl">Hello, I'm Dana 👋</h1>
-        <p class="text-3xl">Frontend Engineer</p>
-        <p class="blurb">
-          building efficient web apps using javascript, react, nodejs
-        </p>
-        <span class="emojis">🎃🕸️🦇👻</span>
-        <div class="box">
-          <a
-            href="https://www.linkedin.com/in/danafng/"
-            target="_blank"
-            class="button"
-            tabindex="1"
-            role="button"
-          >
-            connect on linkedin <br />
-            💻
-          </a>
-          <a
-            href="https://github.com/riceball1"
-            target="_blank"
-            class="button"
-            tabindex="2"
-            role="button"
-          >
-            connect on github <br />
-            💻
-          </a>
-        </div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li class="nav-item active">home</li>
+          <li class="nav-item"> <a href="#projects">projects</a></li>
+          <li class="nav-item" id="toggle">🌕</li>
+        </ul>
       </div>
-    </main>
-    <script></script>
+    </nav>
+
+    <section class="hero container">
+      <div>
+        <p class="hero-tag">
+          Frontend engineer, minimalist, and language learner.
+        </p>
+        <p class="hero-abt">
+          Hi, I'm <strong>Dana</strong>, a frontend engineer and traveler based in San Francisco Bay Area. I have over 4+ years of experience working with JavaScript, TypeScript, HTML/CSS, and React. I'm expanding my knowledge of the fullstack by diving into the backend space, learning morea bout Django, Python, Node.js, SQL and relational database. In my spare time I play soccer/futsal, travel, and learn languages. 
+        </p>
+      </div>
+
+      <a class="btn" href="https://www.linkedin.com/in/danafng/">LinkedIn</a>
+    </section>
+  
+    <section class="hero container">
+      <h2 id="projects">Projects</h2>
+      <p><a href="#">return to top</a></p>
+      <div class="content-section">
+
+        <div class="project-box">TBA</div> <div class="project-box">TBA</div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
