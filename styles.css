@@ -38,15 +38,6 @@ p {
     padding: 0 1rem;
 }
 
-.btn {
-    padding: 10px 30px;
-    border: 3px solid var(--font-light);
-    transition: all 250ms;
-}
-.btn:hover {
-    color: var(--bg-color);
-    background-color: var(--font-light);
-}
 /* End Common Styles */
 
 /* Navbar */
@@ -77,10 +68,6 @@ nav .nav-links .active {
 nav .nav-links .nav-item:hover {
     background-color: var(--bg-light);
 }
-a {
-    text-decoration: none;
-    color: var(--link-btn);
-}
 /* End Navbar */
 /* hero section */
 .hero {
@@ -92,12 +79,6 @@ a {
     text-align: left;
 }
 
-.hero-tag {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    text-align: left;
-}
 .hero-abt {
     line-height: 1.5rem;
     margin: 3rem auto;
@@ -113,11 +94,11 @@ a {
   justify-content: space-between;
 }
 
-.project-box {
+/* .project-box {
   border: 2px solid var(--font-light);
   border-radius: 5px;
   width: 50%;
   height: 200px;
   margin: 3rem 5px;
   text-align: center;
-}
+} */

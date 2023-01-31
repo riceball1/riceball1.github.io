@@ -3,10 +3,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
-    <title>Dana <3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dana🍙</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar sm:text-2xl text-xl">
       <div class="container">
         <ul class="nav-links">
           <li class="nav-item active">home</li>
@@ -16,28 +17,41 @@
       </div>
     </nav>
 
-    <section class="hero container">
+    <section class="flex flex-col sm:mt-40 mt-10 mb-80 sm:mx-20 mx-5">
       <div>
-        <p class="hero-tag">
+        <h1 class="sm:text-6xl text-3xl font-bold hover:bg-teal-500 hover:text-black">
           Frontend engineer, minimalist, and language learner.
-        </p>
-        <p class="hero-abt">
-          Hi, I'm <strong>Dana</strong>, a frontend engineer and traveler based in the San Francisco Bay Area. I have over 4+ years of experience working with JavaScript, TypeScript, HTML/CSS, and React. I'm expanding my knowledge of the fullstack by diving into the backend space, learning more about Django, Python, Node.js, SQL and relational databases. In my spare time I play soccer/futsal, travel, and learn languages. 
+        </h1>
+        <p class="sm:text-2xl  text-xl my-8">
+          <span class="font-bold text-3xl hover:bg-teal-500 hover:text-black">Hi, I'm Dana Ng</span>, a frontend engineer and traveler based in the San Francisco Bay Area. I have over 4+ years of experience working with JavaScript, TypeScript, HTML/CSS, and React. I'm expanding my knowledge of the fullstack by diving into the backend space, learning more about Django, Python, Node.js, SQL and relational databases. In my spare time I play soccer/futsal, travel, and learn languages. 
         </p>
       </div>
 
-      <a class="btn" href="https://www.linkedin.com/in/danafng/">LinkedIn</a>
+        <a class="text-2xl font-bold hover:bg-teal-500 hover:text-black w-36" href="https://www.linkedin.com/in/danafng/">LinkedIn</a>
+        <a class="text-2xl font-bold hover:bg-teal-500 hover:text-black w-36" href="https://github.com/riceball1">Github</a>
+        <br/>
+    
+      </div>
     </section>
   
-    <section class="hero container">
-      <h2 id="projects">Projects</h2>
+    <section class="flex flex-col my-40 sm:mx-20 mx-5">
+      <h2 class="text-4xl font-bold" id="projects">Projects</h2>
       <p><a href="#">return to top</a></p>
-      <div class="content-section">
+      <div class="my-10 flex flex-col justify-around sm:flex-row">
 
-        <div class="project-box">TBA</div> <div class="project-box">TBA</div>
+        <div class="h-80 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
+          <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a href="https://riceball.gitbook.io/frontend-dev-guide/">Frontend Dev Guide ⬈</a></h2>
+          <p>A gitbook containing various collections of frontend development topics and interview guide</p>
+   
+        </div> 
+        <div class="h-80 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
+          <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a href="">TBD ⬈</a></h2>
+          <p>TBD</p>
+   
+        </div> 
       </div>
     </section>
-
+    <footer class="my-10 mx-10 text-center">Made with 🍙 By Dana - 2023</footer>
     <script src="index.js"></script>
   </body>
 </html>
