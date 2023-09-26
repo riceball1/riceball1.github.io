@@ -33,3 +33,11 @@ function switchThemeMode() {
 }
 
 themeToggle.addEventListener("click", switchThemeMode);
+
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    switchThemeMode();
+  }
+}
+
+document.addEventListener("keypress", handleKeyPress);
