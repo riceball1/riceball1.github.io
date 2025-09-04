@@ -1,64 +1,86 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Dana🍙</title>
-  </head>
-  <body>
-    <nav class="navbar sm:text-2xl text-xl">
-      <div class="container">
-        <ul class="nav-links">
-          <li class="nav-item active">home</li>
-          <li class="nav-item"> <a href="#projects">projects</a></li>
-          <li class="nav-item" id="toggle" role="tab" tabindex="0">🌕</li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Dana🍙</title>
+</head>
+
+<body>
+  <nav class="navbar sm:text-2xl text-xl">
+    <div class="container">
+      <ul class="nav-links">
+        <li class="nav-item active">home</li>
+        <li class="nav-item"> <a href="#projects">projects</a></li>
+        <li class="nav-item" id="toggle" role="tab" tabindex="0">🌕</li>
+      </ul>
+    </div>
+  </nav>
+  <section class="flex flex-col sm:mt-40 mt-10 mb-80 sm:mx-20 mx-5">
+    <div>
+      <h1 class="sm:text-6xl text-3xl font-bold">
+        Frontend/Fullstack engineer, minimalist, and language learner.
+      </h1>
+      <p class="sm:text-2xl  text-xl my-8">
+        <span class="font-bold text-3xl hover:bg-teal-500 hover:text-black">Hi, I'm Dana Ng</span>, a frontend/fullstack
+        engineer
+        and traveler based in the San Francisco Bay Area. I have over 6+ years of experience working with
+        JavaScript/TypeScript, APIs, and frameworks like React/Vue/Svelete. I'm expanding my knowledge of the fullstack
+        by diving into the backend space,
+        learning more about Nextjs, SQL and relational databases. In my spare time I play
+        soccer/futsal, travel, and learn languages.
+      </p>
+    </div>
+    <a class="text-2xl font-bold hover:bg-teal-500 hover:text-black w-36"
+      href="https://www.linkedin.com/in/danafng/">LinkedIn</a>
+    <a class="text-2xl font-bold hover:bg-teal-500 hover:text-black w-36" href="https://github.com/riceball1">Github</a>
+    <br />
+    </div>
+  </section>
+  <section class="flex flex-col my-40 sm:mx-20 mx-5">
+    <h2 class="text-4xl font-bold" id="projects">Projects</h2>
+    <p><a href="#">return to top</a></p>
+    <div class="my-10 flex flex-col justify-around sm:flex-row">
+
+      <div class="h-100 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
+        <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a href="#">TBD ⬈</a></h2>
+        <p>Working on a project to showcase my fullstack skills</p>
+        <p>Tech stack: nextjs, tailwind and vue</p>
       </div>
-    </nav>
 
-    <section class="flex flex-col sm:mt-40 mt-10 mb-80 sm:mx-20 mx-5">
-      <div>
-        <h1 class="sm:text-6xl text-3xl font-bold hover:bg-teal-500 hover:text-black">
-          Frontend engineer, minimalist, and language learner.
-        </h1>
-        <p class="sm:text-2xl  text-xl my-8">
-          <span class="font-bold text-3xl hover:bg-teal-500 hover:text-black">Hi, I'm Dana Ng</span>, a frontend engineer and traveler based in the San Francisco Bay Area. I have over 4+ years of experience working with JavaScript, TypeScript, HTML/CSS, and React. I'm expanding my knowledge of the fullstack by diving into the backend space, learning more about Django, Python, Node.js, SQL and relational databases. In my spare time I play soccer/futsal, travel, and learn languages. 
-        </p>
+      <div class="h-100 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
+        <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a
+            href="https://github.com/riceball1/sustainable-fashion">Sustainable Fashion ⬈</a></h2>
+        <p>Simply analyze the material of your product to determine what it rates on sustainability</p>
+        <p>Tech stack: nextjs, typescript</p>
+      </div>
+    </div>
+    <div class="my-10 flex flex-col justify-around sm:flex-row">
+
+      <div class="h-100 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
+        <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a
+            href="https://github.com/riceball1/battleship">Battleship Game ⬈</a></h2>
+        <p>This project was built using react, nextjs, typescript.</p>
+        <p>Battleship is a simple game of targeting spots on a grid to hit randomly position ships. In this simplified
+          version, a single player is given a grid positioned with 3 ships. This project demonstrates use of react state
+          managment as well as creating components and using hooks.</p>
+          <p>Tech stack: react</p>
       </div>
 
-        
-        <a class="text-2xl font-bold hover:bg-teal-500 hover:text-black w-36" href="https://www.linkedin.com/in/danafng/">LinkedIn</a>
-        <a class="text-2xl font-bold hover:bg-teal-500 hover:text-black w-36" href="https://github.com/riceball1">Github</a>
-        <br/>
-    
+      <div class="h-100 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
+        <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a
+            href="https://github.com/riceball1/decision-maker">Decision Maker ⬈</a></h2>
+        <p>Can't decide between options? Let the Decision Maker Web App help you out! This simple and user-friendly
+          web-based application allows you to enter two choices, click a button, and it will randomly select one for
+          you.</p>
+        <p>Tech stack: vanilla javascript</p>
       </div>
-    </section>
-  
-    <section class="flex flex-col my-40 sm:mx-20 mx-5">
-      <h2 class="text-4xl font-bold" id="projects">Projects</h2>
-      <p><a href="#">return to top</a></p>
-      <div class="my-10 flex flex-col justify-around sm:flex-row">
+    </div>
+  </section>
+  <footer class="my-10 mx-10 text-center">Made with 🍙 By Dana - 2025</footer>
+  <script src="index.js"></script>
+</body>
 
-        <div class="h-100 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
-          <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a href="https://riceball.gitbook.io/frontend-dev-guide/">Frontend Dev Guide ⬈</a></h2>
-          <p>A gitbook containing various collections of frontend development topics and interview guide</p>
-        </div>
-
-        <div class="h-100 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
-          <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a href="https://github.com/riceball1/battleship">Battleship Game ⬈</a></h2>
-          <p>This project was built using react, nextjs, typescript.</p>
-          <p>Battleship is a simple game of targeting spots on a grid to hit randomly position ships. In this simplified version, a single player is given a grid positioned with 3 ships. This project demonstrates use of react state managment as well as creating components and using hooks.</p>
-        </div>
-
-        <div class="h-100 sm:w-80 w-full border-2 border-white p-10 rounded-md mt-10">
-          <h2 class="text-3xl hover:bg-teal-500 hover:text-black"><a href="https://github.com/riceball1/decision-maker">Decision Maker ⬈</a></h2>
-          <p>Can't decide between options? Let the Decision Maker Web App help you out! This simple and user-friendly web-based application allows you to enter two choices, click a button, and it will randomly select one for you.</p>
-          <p>This project uses vanilla javascript.</p>
-        </div> 
-      </div>
-    </section>
-    <footer class="my-10 mx-10 text-center">Made with 🍙 By Dana - 2023</footer>
-    <script src="index.js"></script>
-  </body>
 </html>
